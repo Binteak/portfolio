@@ -1,0 +1,99 @@
+.contact-page {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+
+  padding: 120px 24px 80px;
+}
+
+.contact-container {
+  width: min(900px, 100%);
+  margin: 0 auto;
+}
+
+.section-label {
+  margin-bottom: 24px;
+
+  color: #a78bfa;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  letter-spacing: 3px;
+}
+
+.contact-container h1 {
+  max-width: 850px;
+
+  font-family: 'Space Grotesk', sans-serif;
+
+  font-size: clamp(48px, 7vw, 90px);
+  line-height: 0.95;
+
+  letter-spacing: -4px;
+}
+
+.contact-container h1 span {
+  color: #8b5cf6;
+}
+
+.contact-container p {
+  max-width: 550px;
+
+  margin-top: 30px;
+
+  color: #8f8f9d;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.contact-actions {
+  display: flex;
+  gap: 14px;
+
+  margin-top: 35px;
+}
+
+.primary-button,
+.secondary-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 14px 20px;
+
+  border-radius: 9px;
+
+  font-size: 13px;
+
+  transition: 0.25s ease;
+}
+
+.primary-button {
+  background: #8b5cf6;
+  color: white;
+}
+
+.primary-button:hover {
+  transform: translateY(-3px);
+}
+
+.secondary-button {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  background: rgba(255, 255, 255, 0.03);
+
+  color: #d4d4d8;
+}
+
+.secondary-button:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+@media (max-width: 500px) {
+  .contact-actions {
+    flex-direction: column;
+  }
+}

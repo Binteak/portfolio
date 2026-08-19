@@ -1,0 +1,93 @@
+.experience-page {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+
+  padding: 120px 24px 80px;
+}
+
+.experience-container {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+}
+
+.section-label {
+  margin-bottom: 24px;
+
+  color: #a78bfa;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  letter-spacing: 3px;
+}
+
+.experience-container h1 {
+  font-family: 'Space Grotesk', sans-serif;
+
+  font-size: clamp(48px, 7vw, 90px);
+  line-height: 0.95;
+
+  letter-spacing: -4px;
+}
+
+.experience-container h1 span {
+  color: #8b5cf6;
+}
+
+.experience-list {
+  margin-top: 55px;
+}
+
+.experience-item {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+
+  gap: 40px;
+
+  padding: 25px 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.experience-period {
+  color: #71717a;
+
+  font-size: 12px;
+}
+
+.experience-info h3 {
+  font-family: 'Space Grotesk', sans-serif;
+
+  font-size: 21px;
+}
+
+.experience-info span {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #a78bfa;
+
+  font-size: 13px;
+}
+
+.experience-info p {
+  max-width: 600px;
+
+  margin-top: 14px;
+
+  color: #8f8f9d;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+@media (max-width: 650px) {
+  .experience-item {
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+  }
+}
