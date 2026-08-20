@@ -112,3 +112,29 @@ button {
 
   background: rgba(99, 102, 241, 0.08);
 }
+
+/* =========================
+   PAGE SECTIONS
+========================= */
+
+/* .page-section {
+  width: 100%;
+  height: 100vh;
+
+  padding-top: 90px;
+
+  scroll-snap-align: start;
+}
+
+.page-content {
+  width: min(1200px, calc(100% - 48px));
+  height: calc(100vh - 90px);
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+

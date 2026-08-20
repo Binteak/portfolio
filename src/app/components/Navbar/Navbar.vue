@@ -1,4 +1,11 @@
 <script setup>
+const props = defineProps({
+  currentPage: {
+    type: String,
+    default: 'home'
+  }
+})
+
 const emit = defineEmits(['navigate'])
 </script>
 
@@ -17,24 +24,28 @@ const emit = defineEmits(['navigate'])
     <div class="nav-links">
 
       <button
+        :class="{ active: currentPage === 'about' }"
         @click="emit('navigate', 'about')"
       >
         About
       </button>
 
       <button
+        :class="{ active: currentPage === 'techstack' }"
         @click="emit('navigate', 'techstack')"
       >
         Tech Stack
       </button>
 
       <button
+        :class="{ active: currentPage === 'experience' }"
         @click="emit('navigate', 'experience')"
       >
         Experience
       </button>
 
       <button
+        :class="{ active: currentPage === 'projects' }"
         @click="emit('navigate', 'projects')"
       >
         Projects
@@ -44,11 +55,13 @@ const emit = defineEmits(['navigate'])
 
     <!-- Contact -->
     <button
-      class="nav-button"
-      @click="emit('navigate', 'contact')"
-    >
-      Contact <span>→</span>
-    </button>
+  class="nav-button"
+  :class="{ active: currentPage === 'contact' }"
+  @click="emit('navigate', 'contact')"
+>
+  Contact
+  <span>→</span>
+</button>
 
   </nav>
 </template>

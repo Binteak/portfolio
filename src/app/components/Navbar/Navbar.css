@@ -84,7 +84,42 @@
   transform: translateY(-2px);
 }
 
+/* =========================
+   ACTIVE PAGE
+========================= */
+
+.nav-links button.active {
+  color: #ffffff;
+}
+
+.nav-links button.active::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+
+  height: 2px;
+
+  border-radius: 10px;
+
+  background: #8b5cf6;
+
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.6);
+}
+
 .nav-button span {
+  color: #a78bfa;
+}
+
+.nav-button.active {
+  background: rgba(139, 92, 246, 0.12);
+  border-color: rgba(139, 92, 246, 0.4);
+  color: #ffffff;
+}
+
+.nav-button.active span {
   color: #a78bfa;
 }
 

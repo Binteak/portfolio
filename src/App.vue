@@ -51,12 +51,21 @@ const previousPage = () => {
     <div class="grid"></div>
 
     <!-- Navbar -->
-    <Navbar @navigate="changePage" />
+    <!-- <Navbar @navigate="changePage" /> -->
+    <Navbar
+  :current-page="currentPage"
+  @navigate="changePage"
+/>
 
     <!-- Pages -->
     <main class="page-container">
 
-      <Hero v-if="currentPage === 'home'" />
+      <!-- <Hero v-if="currentPage === 'home'" /> -->
+
+      <Hero
+  v-if="currentPage === 'home'"
+  @navigate="changePage"
+/>
 
       <About v-else-if="currentPage === 'about'" />
 
@@ -69,6 +78,8 @@ const previousPage = () => {
       <Contact v-else-if="currentPage === 'contact'" />
 
     </main>
+
+
 
     <!-- Navigation dots -->
     <div class="page-dots">

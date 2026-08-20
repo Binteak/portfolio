@@ -1,16 +1,24 @@
+/* =========================
+   TECH PAGE
+========================= */
+
 .tech-page {
   min-height: 100vh;
 
   display: flex;
-  align-items: center;
 
-  padding: 120px 24px 80px;
+  padding: 120px 24px 100px;
 }
 
 .tech-container {
   width: min(1100px, 100%);
   margin: 0 auto;
 }
+
+
+/* =========================
+   LABEL
+========================= */
 
 .section-label {
   margin-bottom: 24px;
@@ -22,6 +30,11 @@
 
   letter-spacing: 3px;
 }
+
+
+/* =========================
+   TITLE
+========================= */
 
 .tech-container h1 {
   max-width: 850px;
@@ -38,8 +51,13 @@
   color: #8b5cf6;
 }
 
+
+/* =========================
+   DESCRIPTION
+========================= */
+
 .tech-description {
-  max-width: 550px;
+  max-width: 600px;
 
   margin-top: 30px;
 
@@ -49,19 +67,81 @@
   line-height: 1.7;
 }
 
-.tech-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
 
-  gap: 12px;
+/* =========================
+   TECH GROUPS
+========================= */
 
-  margin-top: 50px;
+.tech-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+
+  margin-top: 55px;
 }
 
-.tech-card {
-  padding: 20px;
+.tech-group {
+  width: 100%;
+}
 
-  border: 1px solid rgba(255, 255, 255, 0.08);
+.tech-group-header {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  margin-bottom: 14px;
+
+  color: #a1a1aa;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.tech-group-dot {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #8b5cf6;
+
+  box-shadow:
+    0 0 10px rgba(139, 92, 246, 0.7);
+}
+
+
+/* =========================
+   TECH GRID
+========================= */
+
+.tech-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 10px;
+}
+
+
+/* =========================
+   TECH CARD
+========================= */
+
+.tech-card {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  min-height: 58px;
+
+  padding: 16px 18px;
+
+  border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: 10px;
 
   background: rgba(255, 255, 255, 0.025);
@@ -71,27 +151,131 @@
   font-size: 13px;
 
   transition:
+    transform 0.25s ease,
     background 0.25s ease,
     border-color 0.25s ease,
-    transform 0.25s ease;
+    box-shadow 0.25s ease;
+}
+
+.tech-indicator {
+  width: 4px;
+  height: 4px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #71717a;
+
+  transition:
+    background 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .tech-card:hover {
   transform: translateY(-3px);
 
-  background: rgba(139, 92, 246, 0.08);
+  background: rgba(139, 92, 246, 0.07);
 
   border-color: rgba(139, 92, 246, 0.3);
+
+  box-shadow:
+    0 10px 30px rgba(139, 92, 246, 0.08);
 }
 
-@media (max-width: 800px) {
+.tech-card:hover .tech-indicator {
+  background: #a78bfa;
+
+  box-shadow:
+    0 0 8px rgba(139, 92, 246, 0.8);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .tech-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .tech-page {
+    padding: 90px 20px 70px;
+  }
+
+  .tech-container h1 {
+    letter-spacing: -3px;
+  }
+
   .tech-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
 }
 
+
 @media (max-width: 450px) {
+
   .tech-grid {
     grid-template-columns: 1fr;
   }
+
+  .tech-card {
+    min-height: 52px;
+  }
+
+}
+
+/* =========================
+   TECH PAGE
+========================= */
+
+.tech-page {
+  height: calc(100vh - 90px);
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  padding: 120px 24px 100px;
+
+  scrollbar-width: thin;
+  scrollbar-color: rgba(139, 92, 246, 0.5) transparent;
+}
+
+/* =========================
+   CUSTOM SCROLLBAR
+========================= */
+
+.tech-page::-webkit-scrollbar {
+  width: 6px;
+}
+
+.tech-page::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.tech-page::-webkit-scrollbar-thumb {
+  background: rgba(139, 92, 246, 0.35);
+  border-radius: 10px;
+}
+
+.tech-page::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 92, 246, 0.7);
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.tech-container {
+  width: min(1100px, 100%);
+  margin: 0 auto;
 }
