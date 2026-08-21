@@ -1,23 +1,26 @@
 <script setup>
 const projects = [
   {
-    name: 'StayJaén',
+    name: 'Banking Data Platform',
     description:
-      'A modern accommodation platform focused on discovering and booking places to stay in Jaén.',
-    technologies: 'Angular · FastAPI · PostgreSQL'
+      'Internal banking platform for managing data workflows, including housekeeping, data upload, data quality controls and interactive dashboards.',
+    technologies: ['Angular', 'Django', 'PostgreSQL'],
+    link: 'https://appruiz.netlify.app/'
   },
   {
-    name: 'Project Two',
+    name: 'Vinted-Style Marketplace',
     description:
-      'A modern web application built with a focus on performance and user experience.',
-    technologies: 'Vue · JavaScript · CSS'
+      'Mobile-first marketplace application inspired by Vinted, designed for browsing, managing and discovering second-hand products.',
+    technologies: ['Angular', 'Django', 'PostgreSQL'],
+    link: '#'
   },
-  {
-    name: 'Project Three',
-    description:
-      'An experimental project exploring modern web technologies and interaction design.',
-    technologies: 'Vue · API · SCSS'
-  }
+  // {
+  //   name: 'Gaming Deals Telegram Bot',
+  //   description:
+  //     'Python Telegram bot that monitors game deals and applies custom filters to quickly identify the offers worth buying.',
+  //   technologies: ['Python', 'Telegram API', 'Automation'],
+  //   link: '#'
+  // }
 ]
 </script>
 
@@ -37,31 +40,79 @@ const projects = [
 
       <div class="projects-grid">
 
-        <article
-          v-for="project in projects"
-          :key="project.name"
-          class="project-card"
-        >
+  <article
+    v-for="(project, index) in projects"
+    :key="project.name"
+    class="project-card"
+  >
 
-          <div class="project-number">
-            0{{ projects.indexOf(project) + 1 }}
-          </div>
-
-          <h3>
-            {{ project.name }}
-          </h3>
-
-          <p>
-            {{ project.description }}
-          </p>
-
-          <span class="project-tech">
-            {{ project.technologies }}
-          </span>
-
-        </article>
-
+    <div class="project-top">
+      <div class="project-number">
+        {{ String(index + 1).padStart(2, '0') }}
       </div>
+
+      <a
+        v-if="project.link"
+        :href="project.link"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project-link"
+      >
+        View project ↗
+      </a>
+    </div>
+
+    <div class="project-content">
+      <h3>
+        {{ project.name }}
+      </h3>
+
+      <p>
+        {{ project.description }}
+      </p>
+    </div>
+
+    <div class="project-technologies">
+      <span
+        v-for="technology in project.technologies"
+        :key="technology"
+        class="project-tech"
+      >
+        {{ technology }}
+      </span>
+    </div>
+
+  </article>
+
+
+  <!-- MORE PROJECTS -->
+
+  <article class="project-card project-coming-soon">
+
+    <div class="coming-icon">
+      +
+    </div>
+
+    <div class="coming-content">
+      <h3>
+        More projects
+        <span>coming.</span>
+      </h3>
+
+      <p>
+        Currently adding new projects
+        and experiments.
+      </p>
+    </div>
+
+    <div class="coming-status">
+      <span></span>
+      In progress
+    </div>
+
+  </article>
+
+</div>
 
     </div>
 
