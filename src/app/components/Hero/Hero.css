@@ -1,6 +1,6 @@
-/* =========================
+/* =========================================================
    HERO
-========================= */
+========================================================= */
 
 .hero {
   min-height: 100vh;
@@ -20,10 +20,20 @@
   padding-bottom: 80px;
 }
 
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
 .hero-content {
   position: relative;
   z-index: 3;
 }
+
+
+/* =========================================================
+   STATUS
+========================================================= */
 
 .status {
   display: inline-flex;
@@ -46,14 +56,22 @@
   width: 7px;
   height: 7px;
 
+  flex-shrink: 0;
+
   border-radius: 50%;
 
   background: #a78bfa;
 
-  box-shadow: 0 0 12px rgba(167, 139, 250, 0.8);
+  box-shadow:
+    0 0 12px rgba(167, 139, 250, 0.8);
 
   animation: pulse 2s infinite;
 }
+
+
+/* =========================================================
+   STATUS ANIMATION
+========================================================= */
 
 @keyframes pulse {
   0%,
@@ -66,6 +84,11 @@
   }
 }
 
+
+/* =========================================================
+   TITLE
+========================================================= */
+
 .hero h1 {
   max-width: 780px;
 
@@ -77,6 +100,11 @@
   letter-spacing: -5px;
   font-weight: 600;
 }
+
+
+/* =========================================================
+   GRADIENT TEXT
+========================================================= */
 
 .gradient-text {
   background: linear-gradient(
@@ -92,6 +120,11 @@
   color: transparent;
 }
 
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
 .hero-description {
   max-width: 520px;
 
@@ -103,40 +136,75 @@
   line-height: 1.7;
 }
 
+
+/* =========================================================
+   HERO ACTIONS
+========================================================= */
+
 .hero-actions {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
 
   margin-top: 34px;
 }
 
+
+/* =========================================================
+   BUTTON BASE
+========================================================= */
+
 .primary-button,
-.secondary-button {
+.social-button {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  justify-content: center;
+  gap: 10px;
 
-  padding: 14px 20px;
+  min-height: 48px;
+  padding: 13px 18px;
 
-  border-radius: 9px;
+  border-radius: 10px;
 
+  font-family: inherit;
   font-size: 13px;
   font-weight: 500;
 
   transition:
     transform 0.25s ease,
-    box-shadow 0.25s ease,
-    background 0.25s ease;
+    background 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
+
+/* =========================================================
+   ABOUT BUTTON
+========================================================= */
+
 .primary-button {
-  background: #8b5cf6;
-  color: white;
+  border: 1px solid rgba(139, 92, 246, 0.5);
+
+  background: linear-gradient(
+    135deg,
+    #8b5cf6,
+    #7c3aed
+  );
+
+  color: #ffffff;
+
+  cursor: pointer;
 
   box-shadow:
-    0 0 0 1px rgba(139, 92, 246, 0.2),
+    0 0 0 1px rgba(139, 92, 246, 0.15),
     0 10px 35px rgba(124, 58, 237, 0.25);
+}
+
+.primary-button span {
+  font-size: 16px;
+
+  transition:
+    transform 0.25s ease;
 }
 
 .primary-button:hover {
@@ -144,27 +212,59 @@
 
   box-shadow:
     0 0 0 1px rgba(139, 92, 246, 0.4),
-    0 15px 40px rgba(124, 58, 237, 0.35);
+    0 15px 40px rgba(124, 58, 237, 0.4);
 }
 
-.secondary-button {
+.primary-button:hover span {
+  transform: translateY(3px);
+}
+
+
+/* =========================================================
+   SOCIAL BUTTONS
+========================================================= */
+
+.social-button {
   border: 1px solid rgba(255, 255, 255, 0.1);
 
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.035);
 
-  color: #d4d4d8;
+  color: #a1a1aa;
+
+  text-decoration: none;
 }
 
-.secondary-button:hover {
+.social-button svg {
+  flex-shrink: 0;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.social-button:hover {
   transform: translateY(-3px);
 
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(139, 92, 246, 0.08);
+
+  border-color: rgba(139, 92, 246, 0.45);
+
+  color: #ffffff;
+
+  box-shadow:
+    0 10px 30px rgba(139, 92, 246, 0.12);
+}
+
+.social-button:hover svg {
+  color: #a78bfa;
+
+  transform: scale(1.08);
 }
 
 
-/* =========================
+/* =========================================================
    HERO DECORATION
-========================= */
+========================================================= */
 
 .hero-decoration {
   position: relative;
@@ -175,6 +275,11 @@
   align-items: center;
   justify-content: center;
 }
+
+
+/* =========================================================
+   ORBS
+========================================================= */
 
 .orb {
   position: absolute;
@@ -209,7 +314,8 @@
 
   border-color: rgba(167, 139, 250, 0.12);
 
-  animation: float 9s ease-in-out infinite reverse;
+  animation:
+    float 9s ease-in-out infinite reverse;
 }
 
 .orb-three {
@@ -222,10 +328,17 @@
     transparent 65%
   );
 
-  box-shadow: 0 0 70px rgba(139, 92, 246, 0.2);
+  box-shadow:
+    0 0 70px rgba(139, 92, 246, 0.2);
 
-  animation: float 5s ease-in-out infinite;
+  animation:
+    float 5s ease-in-out infinite;
 }
+
+
+/* =========================================================
+   ORB ANIMATION
+========================================================= */
 
 @keyframes float {
   0%,
@@ -237,6 +350,11 @@
     transform: translateY(-18px) rotate(4deg);
   }
 }
+
+
+/* =========================================================
+   CODE CARD
+========================================================= */
 
 .code-card {
   position: relative;
@@ -259,8 +377,14 @@
 
   transform: rotate(3deg);
 
-  animation: cardFloat 6s ease-in-out infinite;
+  animation:
+    cardFloat 6s ease-in-out infinite;
 }
+
+
+/* =========================================================
+   CODE CARD ANIMATION
+========================================================= */
 
 @keyframes cardFloat {
   0%,
@@ -272,6 +396,11 @@
     transform: translateY(-12px) rotate(1deg);
   }
 }
+
+
+/* =========================================================
+   CODE HEADER
+========================================================= */
 
 .code-header {
   display: flex;
@@ -288,6 +417,11 @@
 
   background: rgba(255, 255, 255, 0.15);
 }
+
+
+/* =========================================================
+   CODE CONTENT
+========================================================= */
 
 .code-content {
   display: flex;
@@ -318,9 +452,9 @@
 }
 
 
-/* =========================
-   SCROLL
-========================= */
+/* =========================================================
+   SCROLL INDICATOR
+========================================================= */
 
 .scroll-indicator {
   position: absolute;
@@ -355,9 +489,9 @@
 }
 
 
-/* =========================
+/* =========================================================
    PROFILE IMAGE
-========================= */
+========================================================= */
 
 .hero-profile {
   position: relative;
@@ -369,6 +503,11 @@
   width: 100%;
   height: 500px;
 }
+
+
+/* =========================================================
+   PROFILE FRAME
+========================================================= */
 
 .profile-frame {
   position: relative;
@@ -412,6 +551,11 @@
   filter: saturate(1);
 }
 
+
+/* =========================================================
+   PROFILE GLOW
+========================================================= */
+
 .profile-glow {
   position: absolute;
 
@@ -424,8 +568,14 @@
 
   filter: blur(80px);
 
-  animation: profileGlow 5s ease-in-out infinite;
+  animation:
+    profileGlow 5s ease-in-out infinite;
 }
+
+
+/* =========================================================
+   PROFILE GLOW ANIMATION
+========================================================= */
 
 @keyframes profileGlow {
   0%,
@@ -439,6 +589,11 @@
     opacity: 0.8;
   }
 }
+
+
+/* =========================================================
+   PROFILE BADGE
+========================================================= */
 
 .profile-badge {
   position: absolute;
@@ -465,23 +620,14 @@
 
   font-size: 11px;
 
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.3);
 }
-
-/* .profile-badge span {
-  width: 6px;
-  height: 6px;
-
-  border-radius: 50%;
-
-  background: #8b5cf6;
-
-  box-shadow: 0 0 10px rgba(139, 92, 246, 0.8);
-} */
 
 .profile-badge > span:first-child {
   width: 6px;
   height: 6px;
+
   flex-shrink: 0;
 
   border-radius: 50%;
@@ -493,11 +639,12 @@
 }
 
 
-/* =========================
+/* =========================================================
    RESPONSIVE
-========================= */
+========================================================= */
 
 @media (max-width: 850px) {
+
   .hero {
     width: min(100% - 32px, 600px);
 
@@ -540,35 +687,264 @@
   }
 }
 
-@media (max-width: 500px) {
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
   .hero {
+    width: calc(100% - 40px);
+
     min-height: calc(100vh - 75px);
 
-    padding-top: 50px;
+    padding: 90px 0 70px;
+
+    gap: 20px;
   }
 
+
+  /* -------------------------------------------------------
+     STATUS
+  ------------------------------------------------------- */
+
   .status {
+    margin-top: 45px;
+    margin-bottom: 24px;
+
+    font-size: 10px;
+
+    white-space: nowrap;
+  }
+
+
+  /* -------------------------------------------------------
+     TITLE
+  ------------------------------------------------------- */
+
+  .hero h1 {
+    font-size: clamp(48px, 14vw, 65px);
+
+    letter-spacing: -3px;
+  }
+
+
+  /* -------------------------------------------------------
+     DESCRIPTION
+  ------------------------------------------------------- */
+
+  .hero-description {
+    margin-top: 26px;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+  }
+
+
+  /* -------------------------------------------------------
+     ACTIONS
+  ------------------------------------------------------- */
+
+  .hero-actions {
+    display: flex;
+
+    align-items: center;
+
+    width: 100%;
+
+    gap: 8px;
+
+    margin-top: 30px;
+
+    flex-wrap: nowrap;
+  }
+
+
+  /* -------------------------------------------------------
+     ABOUT BUTTON
+  ------------------------------------------------------- */
+
+  .primary-button {
+    flex: 1;
+
+    min-width: 0;
+
+    min-height: 44px;
+
+    padding: 11px 12px;
+
+    white-space: nowrap;
+
+    font-size: 12px;
+  }
+
+
+  /* -------------------------------------------------------
+     SOCIAL BUTTONS
+  ------------------------------------------------------- */
+
+  .social-button {
+    flex: 0 0 44px;
+
+    width: 44px;
+    min-width: 44px;
+
+    height: 44px;
+    min-height: 44px;
+
+    padding: 0;
+
+    gap: 0;
+
+    font-size: 0;
+
+    white-space: nowrap;
+  }
+
+  .social-button svg {
+    width: 18px;
+    height: 18px;
+  }
+
+
+  /* -------------------------------------------------------
+     PROFILE
+  ------------------------------------------------------- */
+
+  .hero-profile {
+    height: 330px;
+
+    margin-top: 45px;
+  }
+
+  .profile-frame {
+    width: 240px;
+    height: 240px;
+  }
+
+  .profile-glow {
+    width: 200px;
+    height: 200px;
+  }
+
+  .profile-badge {
+    right: 2%;
+    bottom: 15px;
+
+    padding: 9px 12px;
+
+    font-size: 10px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 500px) {
+
+  .hero {
+    padding-top: 70px;
+  }
+
+
+  /* STATUS */
+
+  .status {
+    margin-top: 50px;
+
     font-size: 10px;
   }
 
+
+  /* TITLE */
+
   .hero h1 {
     font-size: 52px;
+
     letter-spacing: -3px;
   }
+
+
+  /* DESCRIPTION */
 
   .hero-description {
     font-size: 14px;
   }
 
+
+  /* ACTIONS
+     Keep everything on ONE line
+  */
+
   .hero-actions {
-    flex-direction: column;
-    align-items: stretch;
+    flex-direction: row;
+
+    align-items: center;
+
+    gap: 7px;
+
+    width: 100%;
   }
 
-  .primary-button,
-  .secondary-button {
-    justify-content: center;
+  .primary-button {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 11px 10px;
+
+    font-size: 11px;
   }
+
+  .social-button {
+    flex: 0 0 42px;
+
+    width: 42px;
+    min-width: 42px;
+
+    height: 42px;
+    min-height: 42px;
+  }
+
+  .social-button svg {
+    width: 17px;
+    height: 17px;
+  }
+
+
+  /* PROFILE */
+
+  .hero-profile {
+    height: 300px;
+
+    margin-top: 35px;
+  }
+
+  .profile-frame {
+    width: 220px;
+    height: 220px;
+  }
+
+  .profile-glow {
+    width: 180px;
+    height: 180px;
+  }
+
+  .profile-badge {
+    right: 0;
+    bottom: 10px;
+
+    padding: 8px 10px;
+
+    font-size: 9px;
+  }
+
+
+  /* DECORATION */
 
   .hero-decoration {
     height: 280px;
@@ -592,166 +968,4 @@
   .code-card {
     width: 250px;
   }
-}
-
-/* =========================
-   SOCIAL BUTTONS
-========================= */
-
-.social-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-
-  padding: 14px 20px;
-
-  border: 1px solid rgba(139, 92, 246, 0.35);
-  border-radius: 9px;
-
-  background: rgba(139, 92, 246, 0.08);
-
-  color: #d4d4d8;
-
-  font-size: 13px;
-  font-weight: 500;
-
-  transition:
-    transform 0.25s ease,
-    background 0.25s ease,
-    border-color 0.25s ease,
-    box-shadow 0.25s ease;
-}
-
-.social-button:hover {
-  transform: translateY(-3px);
-
-  background: rgba(139, 92, 246, 0.15);
-
-  border-color: rgba(139, 92, 246, 0.7);
-
-  color: #ffffff;
-
-  box-shadow:
-    0 10px 30px rgba(139, 92, 246, 0.18);
-}
-
-.primary-button {
-  border: none;
-  cursor: pointer;
-  font-family: inherit;
-}
-
-
-
-
-/* =========================
-   HERO ACTIONS
-========================= */
-
-.hero-actions {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-top: 34px;
-}
-
-.primary-button,
-.social-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-
-  min-height: 48px;
-  padding: 13px 18px;
-
-  border-radius: 10px;
-
-  font-family: inherit;
-  font-size: 13px;
-  font-weight: 500;
-
-  transition:
-    transform 0.25s ease,
-    background 0.25s ease,
-    border-color 0.25s ease,
-    box-shadow 0.25s ease;
-}
-
-
-/* =========================
-   ABOUT BUTTON
-========================= */
-
-.primary-button {
-  border: 1px solid rgba(139, 92, 246, 0.5);
-
-  background: linear-gradient(
-    135deg,
-    #8b5cf6,
-    #7c3aed
-  );
-
-  color: #ffffff;
-
-  cursor: pointer;
-
-  box-shadow:
-    0 0 0 1px rgba(139, 92, 246, 0.15),
-    0 10px 35px rgba(124, 58, 237, 0.25);
-}
-
-.primary-button span {
-  font-size: 16px;
-  transition: transform 0.25s ease;
-}
-
-.primary-button:hover {
-  transform: translateY(-3px);
-
-  box-shadow:
-    0 0 0 1px rgba(139, 92, 246, 0.4),
-    0 15px 40px rgba(124, 58, 237, 0.4);
-}
-
-.primary-button:hover span {
-  transform: translateY(3px);
-}
-
-
-/* =========================
-   SOCIAL BUTTONS
-========================= */
-
-.social-button {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-
-  background: rgba(255, 255, 255, 0.035);
-
-  color: #a1a1aa;
-}
-
-.social-button svg {
-  transition:
-    color 0.25s ease,
-    transform 0.25s ease;
-}
-
-.social-button:hover {
-  transform: translateY(-3px);
-
-  background: rgba(139, 92, 246, 0.08);
-
-  border-color: rgba(139, 92, 246, 0.45);
-
-  color: #ffffff;
-
-  box-shadow:
-    0 10px 30px rgba(139, 92, 246, 0.12);
-}
-
-.social-button:hover svg {
-  color: #a78bfa;
-  transform: scale(1.08);
 }

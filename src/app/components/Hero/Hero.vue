@@ -31,6 +31,8 @@ onUnmounted(() => {
 </script>
 
 <template>
+  <!-- <br> -->
+  <!-- <br> -->
   <section class="hero">
 
     <div class="hero-content">

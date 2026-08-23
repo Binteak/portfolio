@@ -1,3 +1,7 @@
+/* =========================================================
+   EXPERIENCE PAGE
+========================================================= */
+
 .experience-page {
   height: calc(100vh - 90px);
 
@@ -6,9 +10,16 @@
 
   padding: 120px 24px 100px;
 
+  box-sizing: border-box;
+
   scrollbar-width: thin;
   scrollbar-color: rgba(139, 92, 246, 0.5) transparent;
 }
+
+
+/* =========================================================
+   CUSTOM SCROLLBAR
+========================================================= */
 
 .experience-page::-webkit-scrollbar {
   width: 6px;
@@ -27,14 +38,20 @@
   background: rgba(139, 92, 246, 0.7);
 }
 
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
 .experience-container {
   width: min(1100px, 100%);
   margin: 0 auto;
 }
 
-/* =========================
+
+/* =========================================================
    LABEL
-========================= */
+========================================================= */
 
 .section-label {
   margin-bottom: 24px;
@@ -47,12 +64,15 @@
   letter-spacing: 3px;
 }
 
-/* =========================
+
+/* =========================================================
    TITLE
-========================= */
+========================================================= */
 
 .experience-container h1 {
   max-width: 850px;
+
+  margin: 0;
 
   font-family: 'Space Grotesk', sans-serif;
 
@@ -66,14 +86,15 @@
   color: #8b5cf6;
 }
 
-/* =========================
+
+/* =========================================================
    INTRO
-========================= */
+========================================================= */
 
 .experience-intro {
   max-width: 620px;
 
-  margin-top: 30px;
+  margin: 30px 0 0;
 
   color: #8f8f9d;
 
@@ -81,29 +102,38 @@
   line-height: 1.7;
 }
 
-/* =========================
+
+/* =========================================================
    EXPERIENCE LIST
-========================= */
+========================================================= */
 
 .experience-list {
   margin-top: 60px;
 }
 
+
+/* =========================================================
+   EXPERIENCE ITEM
+========================================================= */
+
 .experience-item {
   display: grid;
 
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: 180px minmax(0, 1fr);
 
   gap: 40px;
 
   padding: 35px 0;
 
   border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-sizing: border-box;
 }
 
-/* =========================
+
+/* =========================================================
    PERIOD
-========================= */
+========================================================= */
 
 .experience-period {
   color: #71717a;
@@ -113,15 +143,24 @@
   padding-top: 5px;
 }
 
-/* =========================
+
+/* =========================================================
    EXPERIENCE INFO
-========================= */
+========================================================= */
+
+.experience-info {
+  min-width: 0;
+}
 
 .experience-info h2 {
+  margin: 0;
+
   font-family: 'Space Grotesk', sans-serif;
 
   font-size: 25px;
   font-weight: 600;
+
+  line-height: 1.2;
 
   letter-spacing: -0.5px;
 }
@@ -138,7 +177,7 @@
 .experience-description {
   max-width: 700px;
 
-  margin-top: 15px;
+  margin: 15px 0 0;
 
   color: #8f8f9d;
 
@@ -146,157 +185,28 @@
   line-height: 1.7;
 }
 
-/* =========================
-   PROJECTS
-========================= */
 
-.projects {
-  display: flex;
-  flex-direction: column;
-
-  gap: 18px;
-
-  margin-top: 30px;
-}
-
-.project {
-  padding: 20px;
-
-  border: 1px solid rgba(255, 255, 255, 0.07);
-
-  border-radius: 12px;
-
-  background: rgba(255, 255, 255, 0.025);
-
-  transition:
-    transform 0.25s ease,
-    border-color 0.25s ease,
-    background 0.25s ease;
-}
-
-.project:hover {
-  transform: translateY(-2px);
-
-  border-color: rgba(139, 92, 246, 0.3);
-
-  background: rgba(139, 92, 246, 0.04);
-}
-
-/* =========================
-   PROJECT HEADER
-========================= */
-
-.project-header {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-
-  flex-wrap: wrap;
-}
-
-.project-client {
-  color: #d4d4d8;
-
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.project-title {
-  color: #a78bfa;
-
-  font-size: 12px;
-
-  padding: 4px 8px;
-
-  border: 1px solid rgba(139, 92, 246, 0.2);
-
-  border-radius: 5px;
-
-  background: rgba(139, 92, 246, 0.06);
-}
-
-/* =========================
-   PROJECT DESCRIPTION
-========================= */
-
-.project p {
-  max-width: 650px;
-
-  margin-top: 12px;
-
-  color: #8f8f9d;
-
-  font-size: 13px;
-  line-height: 1.7;
-}
-
-/* =========================
-   TECHNOLOGIES
-========================= */
-
-.technology-list {
-  display: flex;
-
-  flex-wrap: wrap;
-
-  gap: 7px;
-
-  margin-top: 15px;
-}
-
-.technology-list span {
-  padding: 5px 8px;
-
-  border: 1px solid rgba(255, 255, 255, 0.06);
-
-  border-radius: 5px;
-
-  color: #71717a;
-
-  font-size: 10px;
-
-  background: rgba(255, 255, 255, 0.02);
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 700px) {
-
-  .experience-page {
-    padding: 90px 20px 80px;
-  }
-
-  .experience-container h1 {
-    letter-spacing: -3px;
-  }
-
-  .experience-item {
-    grid-template-columns: 1fr;
-
-    gap: 12px;
-  }
-
-  .experience-period {
-    padding-top: 0;
-  }
-
-  .experience-info h2 {
-    font-size: 22px;
-  }
-
-  .project {
-    padding: 16px;
-  }
-}
-
+/* =========================================================
+   COMPANY HEADER
+========================================================= */
 
 .company-header {
   display: flex;
   align-items: center;
+
   gap: 14px;
+
+  min-width: 0;
 }
+
+.company-header > div:last-child {
+  min-width: 0;
+}
+
+
+/* =========================================================
+   COMPANY LOGO
+========================================================= */
 
 .company-logo {
   width: 42px;
@@ -309,6 +219,7 @@
   flex-shrink: 0;
 
   border: 1px solid rgba(255, 255, 255, 0.1);
+
   border-radius: 50%;
 
   background: rgba(255, 255, 255, 0.04);
@@ -335,11 +246,104 @@
 }
 
 
+/* =========================================================
+   FUTURE PROJECT
+========================================================= */
+
+.future-heart {
+  color: #8b5cf6;
+
+  font-size: 21px;
+  line-height: 1;
+
+  text-shadow:
+    0 0 10px rgba(139, 92, 246, 0.55),
+    0 0 20px rgba(139, 92, 246, 0.2);
+}
+
+
+/* =========================================================
+   PROJECTS
+========================================================= */
+
+.projects {
+  display: flex;
+  flex-direction: column;
+
+  gap: 18px;
+
+  margin-top: 30px;
+}
+
+
+/* =========================================================
+   PROJECT
+========================================================= */
+
+.project {
+  padding: 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.07);
+
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  box-sizing: border-box;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+.project:hover {
+  transform: translateY(-2px);
+
+  border-color: rgba(139, 92, 246, 0.3);
+
+  background: rgba(139, 92, 246, 0.04);
+}
+
+
+/* =========================================================
+   PROJECT HEADER
+========================================================= */
+
+.project-header {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   PROJECT CLIENT
+========================================================= */
+
 .project-client-wrapper {
   display: flex;
   align-items: center;
+
   gap: 9px;
+
+  min-width: 0;
 }
+
+.project-client {
+  color: #d4d4d8;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   PROJECT LOGO
+========================================================= */
 
 .project-logo {
   width: 28px;
@@ -352,6 +356,7 @@
   flex-shrink: 0;
 
   border: 1px solid rgba(255, 255, 255, 0.08);
+
   border-radius: 50%;
 
   background: rgba(255, 255, 255, 0.035);
@@ -366,12 +371,318 @@
   object-fit: contain;
 }
 
-.future-heart {
-  color: #8b5cf6;
-  font-size: 21px;
-  line-height: 1;
 
-  text-shadow:
-    0 0 10px rgba(139, 92, 246, 0.55),
-    0 0 20px rgba(139, 92, 246, 0.2);
+/* =========================================================
+   PROJECT TITLE
+========================================================= */
+
+.project-title {
+  color: #a78bfa;
+
+  font-size: 12px;
+
+  padding: 4px 8px;
+
+  border: 1px solid rgba(139, 92, 246, 0.2);
+
+  border-radius: 5px;
+
+  background: rgba(139, 92, 246, 0.06);
+}
+
+
+/* =========================================================
+   PROJECT DESCRIPTION
+========================================================= */
+
+.project p {
+  max-width: 650px;
+
+  margin: 12px 0 0;
+
+  color: #8f8f9d;
+
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   TECHNOLOGIES
+========================================================= */
+
+.technology-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-top: 15px;
+}
+
+.technology-list span {
+  padding: 5px 8px;
+
+  border: 1px solid rgba(255, 255, 255, 0.06);
+
+  border-radius: 5px;
+
+  color: #71717a;
+
+  font-size: 10px;
+
+  background: rgba(255, 255, 255, 0.02);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .experience-item {
+    grid-template-columns: 150px minmax(0, 1fr);
+
+    gap: 30px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .experience-page {
+    height: calc(100vh - 90px);
+
+    padding: 90px 20px 70px;
+
+    box-sizing: border-box;
+  }
+
+
+  /* -----------------------------------------
+     TITLE
+  ----------------------------------------- */
+
+  .experience-container h1 {
+    margin: 0;
+
+    letter-spacing: -3px;
+  }
+
+
+  /* -----------------------------------------
+     INTRO
+  ----------------------------------------- */
+
+  .experience-intro {
+    margin-top: 30px;
+
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+
+  /* -----------------------------------------
+     LIST
+  ----------------------------------------- */
+
+  .experience-list {
+    margin-top: 50px;
+  }
+
+
+  /* -----------------------------------------
+     EXPERIENCE ITEM
+  ----------------------------------------- */
+
+  .experience-item {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+
+    padding: 30px 0;
+  }
+
+
+  /* -----------------------------------------
+     PERIOD
+  ----------------------------------------- */
+
+  .experience-period {
+    padding-top: 0;
+
+    font-size: 11px;
+  }
+
+
+  /* -----------------------------------------
+     COMPANY HEADER
+  ----------------------------------------- */
+
+  .company-header {
+    gap: 12px;
+
+    align-items: center;
+  }
+
+
+  .company-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+
+  /* -----------------------------------------
+     ROLE
+  ----------------------------------------- */
+
+  .experience-info h2 {
+    font-size: 22px;
+
+    line-height: 1.2;
+  }
+
+
+  .experience-company {
+    font-size: 12px;
+  }
+
+
+  /* -----------------------------------------
+     DESCRIPTION
+  ----------------------------------------- */
+
+  .experience-description {
+    margin-top: 14px;
+
+    font-size: 14px;
+  }
+
+
+  /* -----------------------------------------
+     PROJECTS
+  ----------------------------------------- */
+
+  .projects {
+    gap: 14px;
+
+    margin-top: 25px;
+  }
+
+
+  /* -----------------------------------------
+     PROJECT
+  ----------------------------------------- */
+
+  .project {
+    width: 100%;
+
+    padding: 16px;
+  }
+
+
+  /* -----------------------------------------
+     PROJECT HEADER
+  ----------------------------------------- */
+
+  .project-header {
+    align-items: flex-start;
+
+    gap: 9px;
+  }
+
+
+  .project-title {
+    font-size: 11px;
+  }
+
+
+  /* -----------------------------------------
+     PROJECT DESCRIPTION
+  ----------------------------------------- */
+
+  .project p {
+    margin-top: 12px;
+
+    font-size: 13px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 450px) {
+
+  .experience-page {
+    padding: 90px 20px 100px;
+  }
+
+
+  .experience-container h1 {
+    font-size: clamp(46px, 13vw, 60px);
+
+    letter-spacing: -3px;
+  }
+
+
+  .experience-intro {
+    font-size: 14px;
+  }
+
+
+  .experience-list {
+    margin-top: 50px;
+  }
+
+
+  .experience-item {
+    padding: 28px 0;
+  }
+
+
+  .experience-info h2 {
+    font-size: 20px;
+  }
+
+
+  .experience-company {
+    font-size: 12px;
+  }
+
+
+  .company-logo {
+    width: 38px;
+    height: 38px;
+  }
+
+
+  .project {
+    padding: 15px;
+  }
+
+
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+  .project-title {
+    margin-left: 37px;
+  }
+
+  .section-label { margin-top: 30px;}
+
+  .experience-container{ margin:5px; } 
+
 }
