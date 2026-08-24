@@ -5,7 +5,7 @@ const projects = [
     description:
       'Internal banking platform for managing data workflows, including housekeeping, data upload, data quality controls and interactive dashboards.',
     technologies: ['Angular', 'Django', 'PostgreSQL'],
-    link: 'https://bankingdataplatform.netlify.app/dashboard'
+    link: 'https://bankingdataplatform.netlify.app/'
   },
   {
     name: 'Vinted-Style Marketplace',
