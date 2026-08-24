@@ -54,27 +54,25 @@ import profileImage from '../../../assets/images/profile.jpeg'
           </a>
 
           <!-- Gmail -->
-          <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=alruizra93@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="social-button"
-            aria-label="Email"
-            title="Email"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="20"
-              height="20"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.8"
-            >
-              <rect x="3" y="5" width="18" height="14" rx="2" />
-              <path d="m3 7 9 6 9-6" />
-            </svg>
-          </a>
+        <a
+  href="mailto:alruizra93@gmail.com"
+  class="social-button"
+  aria-label="Email"
+  title="Email"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    width="20"
+    height="20"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.8"
+  >
+    <rect x="3" y="5" width="18" height="14" rx="2" />
+    <path d="m3 7 9 6 9-6" />
+  </svg>
+</a>
 
         </div>
 
