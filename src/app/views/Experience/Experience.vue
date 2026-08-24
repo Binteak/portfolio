@@ -4,6 +4,8 @@ import eyLogo from '../../../assets/logos/ey.jpg'
 import quentalLogo from '../../../assets/logos/quental.jpg'
 import santanderLogo from '../../../assets/logos/santander.jpg'
 import bbvaLogo from '../../../assets/logos/bbva.jpg'
+import liberbankLogo from '../../../assets/logos/liberbank.jpg'
+
 
 const experiences = [
   {
@@ -26,19 +28,70 @@ const experiences = [
 
     projects: [
       {
+  client: 'BBVA',
+  logo: bbvaLogo,
+  title: 'Backstop Audit Automation',
+  description:
+    'Development and automation of audit processes for the Backstop regulatory framework, using Python and PySpark to process and transform large datasets. Worked within BBVA’s AWS ADA environment to access and process data, reducing manual effort and improving the efficiency and traceability of audit workflows.',
+  technologies: [
+    'Python',
+    'PySpark',
+    'FastAPI',
+    'Angular',
+    'SQL',
+    'AWS',
+    'Automation'
+  ]
+},
+    {
+  client: 'BBVA',
+  logo: bbvaLogo,
+  title: 'Audit Reporting & Power BI',
+  description:
+    'Development of data processing and reporting solutions for audit activities, working with data from BBVA’s AWS ADA environment and using PySpark to transform and analyse datasets before generating Power BI dashboards and visualisations for audit analysis and decision-making.',
+  technologies: [
+    'Python',
+    'PySpark',
+    'Power BI',
+    'AWS',
+    'SQL',
+    'Data Processing',
+    'Data Visualisation'
+  ]
+},
+      {
+  client: 'Banco Santander',
+  logo: santanderLogo,
+  title: 'Application Modernisation',
+  description:
+    'Modernisation of existing applications, migrating frontend components to newer Angular versions and developing new backend services with Python and FastAPI. Worked with Databricks for data processing and followed the project CI/CD process through pull requests, Gluon-based component templates, SonarQube and Fortify quality checks, container image generation and deployment management on Red Hat OpenShift. Also worked with application secrets and environment configuration within OpenShift workflows.',
+  technologies: [
+    'Angular',
+    'Python',
+    'FastAPI',
+    'Databricks',
+    'Red Hat OpenShift',
+    'Gluon',
+    'SonarQube',
+    'Fortify',
+    'CI/CD'
+  ]
+},
+      {
         client: 'Banco Santander',
         logo: santanderLogo,
         title: 'Credit Risk & EBA Regulatory',
         description:
-          'Development of technological solutions for credit risk and regulatory reporting, working with critical financial processes and enterprise environments.',
+          'Development of internal Full Stack applications for credit risk and EBA regulatory reporting, working with critical financial processes and enterprise environments. Successfully delivered three applications across four consecutive regulatory cycles, leading a team of three people for one year.',
         technologies: [
           'Python',
-          'PySpark',
+          'Django REST Framework',
           'Angular',
           'SQL',
-          'Power BI'
+          'Oracle',
         ]
       },
+
       {
         client: 'Banco Santander',
         logo: santanderLogo,
@@ -49,23 +102,25 @@ const experiences = [
           'Python',
           'PySpark',
           'SQL',
-          'Data'
+          'Oracle',
+          'Data Processing'
         ]
       },
+
+ 
       {
-        client: 'BBVA',
-        logo: bbvaLogo,
-        title: 'Audit Automation',
+        client: 'Liberbank',
+        logo: liberbankLogo,
+        title: 'Liberbank – Unicaja Integration',
         description:
-          'Development and automation of audit processes, creating technological solutions to reduce manual work and improve operational efficiency.',
+          'Development of credit scoring models using SAS as part of the technological and data integration activities related to the Liberbank and Unicaja merger, supporting the integration of banking systems and credit risk processes.',
         technologies: [
-          'Python',
-          'FastAPI',
-          'Angular',
-          'Power BI',
-          'Automation'
+          'SAS',
+          'Credit Risk',
+          'Scoring',
+          'Banking Integration'
         ]
-      }
+      },
     ],
 
     description:

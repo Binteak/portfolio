@@ -33,7 +33,7 @@ function toggleMenu() {
       class="logo"
       @click="navigate('home')"
     >
-      Portfolio<span>.</span>
+      ARR<span>.</span>
     </button>
 
 

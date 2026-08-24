@@ -9,11 +9,11 @@ import profileImage from '../../../assets/images/profile.jpeg'
 defineEmits(['navigate'])
 
 const profileTags = [
-  '#TechLead',
-  '#Leadership',
-  '#ProblemSolving',
+    '#TechLeadership',
   '#FullStack',
-  '#Automation'
+  '#Data',
+  '#Automation',
+  '#ProblemSolving'
 ]
 
 const currentTag = ref(0)
@@ -42,21 +42,41 @@ onUnmounted(() => {
         Available for new opportunities
       </div>
 
-      <h1>
+      <!-- <h1>
         Álvaro Ruiz
         <span class="gradient-text">Ramírez.</span>
-      </h1>
+      </h1> -->
+      <div class="hero-mobile-title">
+
+  <h1>
+    Álvaro Ruiz
+    <span class="gradient-text">Ramírez.</span>
+  </h1>
+
+  <div class="hero-mobile-profile">
+    <div class="profile-glow"></div>
+
+    <div class="profile-frame">
+      <img
+        :src="profileImage"
+        alt="Álvaro Ruiz Ramírez"
+      />
+    </div>
+  </div>
+
+</div>
    
-  &nbsp;
+ 
 
       <h2>
         Senior Full Stack Developer · Software Engineering · Data & Automation
       </h2>
 
       <p class="hero-description">
-        I build end-to-end software solutions across backend,
-        frontend, data and infrastructure, combining solid
-        architecture with automation and business-driven solutions.
+        I build and lead end-to-end technology solutions across
+  software engineering, data, automation and cloud, combining
+  hands-on development with technical leadership and
+  business-driven problem solving.
       </p>
 
       <!-- <div class="hero-actions">

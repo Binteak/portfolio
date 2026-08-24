@@ -41,12 +41,13 @@
   background: transparent;
 
   color: #ffffff;
+  margin-left:30px;
 
   font-family: 'Space Grotesk', sans-serif;
   font-size: 20px;
   font-weight: 700;
 
-  letter-spacing: -0.8px;
+  letter-spacing: -0.2px;
 
   cursor: pointer;
 }

@@ -12,55 +12,80 @@ const technologyGroups = [
       'SCSS'
     ]
   },
+
   {
     title: 'Backend & APIs',
     technologies: [
       'Python',
-      'Django',
       'FastAPI',
-      'PySpark',
+      'Django',
+      'Django REST Framework',
       'REST APIs'
     ]
   },
+
   {
-    title: 'Data & Databases',
+    title: 'Data & Analytics',
     technologies: [
-      'PostgreSQL',
-      'SQL',
-      'Power BI'
+      'PySpark',
+      'Databricks',
+      'Power BI',
+      'Data Processing',
+      'Data Visualisation',
+      'Machine Learning'
     ]
   },
+
   {
-    title: 'DevOps & Cloud',
+    title: 'Databases',
     technologies: [
+      'Oracle',
+      'PostgreSQL',
+      'SQL'
+    ]
+  },
+
+  {
+    title: 'Cloud & DevOps',
+    technologies: [
+      'AWS',
+      'Red Hat OpenShift',
       'Docker',
       'Git',
-      'CI/CD',
-      'Red Hat OpenShift'
+      'CI/CD'
     ]
   },
-  {
-    title: 'Architecture',
-    technologies: [
-      'Microservices',
-      'Software Architecture',
-      'System Design'
-    ]
-  },
+
   {
     title: 'Code Quality & Security',
     technologies: [
       'SonarQube',
       'Fortify',
-      'Secure Development',
-      'Code Quality'
+      'Unit Testing',
+      'Integration Testing',
+      'Secure Development'
     ]
   },
+
   {
-    title: 'Automation',
+    title: 'Architecture & Engineering',
+    technologies: [
+      'Software Architecture',
+      'Application Modernisation',
+      'System Design',
+      'Gluon'
+    ]
+  },
+
+  {
+    title: 'Automation & Regulatory',
     technologies: [
       'Process Automation',
-      'Data Automation'
+      'Data Automation',
+      'Credit Risk',
+      'EBA Regulatory',
+      'Climate Risk',
+      'Credit Scoring'
     ]
   }
 ]

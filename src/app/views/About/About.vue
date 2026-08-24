@@ -18,7 +18,12 @@
       </h1>
 
       <p class="about-description">
-        I'm an IT professional with 7+ years of experience in software development and technology projects within the financial and regulatory sector. I've led multiple teams, coordinated delivery, and delegated responsibilities across planning, roadmaps, and execution, working closely with stakeholders to ensure projects are delivered on time and to a high standard.
+        I'm a Senior technology consultant and Full Stack Developer with
+  7+ years of experience delivering software, data and automation
+  solutions across financial and regulatory environments. I've led
+  teams, coordinated delivery and delegated responsibilities across
+  planning, roadmaps and execution, working closely with stakeholders
+  to turn complex requirements into reliable technology solutions.
       </p>
 
 
@@ -37,11 +42,10 @@
           </h3>
 
           <p>
-            A Senior Full Stack Developer focused on building
-            reliable, scalable and modern software solutions.
-            I enjoy working across the entire development
-            lifecycle, from architecture and backend systems
-            to frontend applications and deployment.
+             A Senior technology consultant and Full Stack Developer who
+  combines hands-on engineering with technical leadership.
+  I enjoy understanding complex problems, defining practical
+  solutions and helping teams turn them into reliable software.
           </p>
 
         </div>
@@ -58,10 +62,10 @@
           </h3>
 
           <p>
-            I design and develop end-to-end applications,
-            combining Full Stack development, software
-            architecture, automation and data-driven solutions
-            to solve real business problems.
+            I design and develop end-to-end solutions across frontend,
+  backend, data and automation, while contributing to
+  architecture, application modernisation, DevOps and
+  technical delivery.
           </p>
 
         </div>
@@ -79,62 +83,62 @@
 
         <div class="specialization-grid">
 
-          <div class="specialization">
-            <span class="specialization-icon">
-              &lt;/&gt;
-            </span>
+  <div class="specialization">
+    <span class="specialization-icon">
+      &lt;/&gt;
+    </span>
 
-            <div>
-              <strong>Full Stack</strong>
-              <p>
-                Backend, APIs & Frontend
-              </p>
-            </div>
-          </div>
-
-
-          <div class="specialization">
-            <span class="specialization-icon">
-              ◈
-            </span>
-
-            <div>
-              <strong>Architecture</strong>
-              <p>
-                Microservices & Solutions
-              </p>
-            </div>
-          </div>
+    <div>
+      <strong>Full Stack</strong>
+      <p>
+        Angular, Python & APIs
+      </p>
+    </div>
+  </div>
 
 
-          <div class="specialization">
-            <span class="specialization-icon">
-              ◉
-            </span>
+  <div class="specialization">
+    <span class="specialization-icon">
+      ◈
+    </span>
 
-            <div>
-              <strong>Data & Automation</strong>
-              <p>
-                Data-driven processes
-              </p>
-            </div>
-          </div>
+    <div>
+      <strong>Data & Analytics</strong>
+      <p>
+        PySpark, Databricks & Power BI
+      </p>
+    </div>
+  </div>
 
 
-          <div class="specialization">
-            <span class="specialization-icon">
-              ⚙
-            </span>
+  <div class="specialization">
+    <span class="specialization-icon">
+      ◉
+    </span>
 
-            <div>
-              <strong>DevOps</strong>
-              <p>
-                CI/CD, Docker & OpenShift
-              </p>
-            </div>
-          </div>
+    <div>
+      <strong>Automation & Regulatory</strong>
+      <p>
+        Banking, Risk & Regulatory
+      </p>
+    </div>
+  </div>
 
-        </div>
+
+  <div class="specialization">
+    <span class="specialization-icon">
+      ⚙
+    </span>
+
+    <div>
+      <strong>DevOps & Quality</strong>
+      <p>
+        CI/CD, OpenShift & Code Quality
+      </p>
+    </div>
+  </div>
+
+</div>
 
       </div>
 
@@ -148,15 +152,19 @@
         </div>
 
         <p>
-          Throughout my career I've taken on technical
-          leadership responsibilities and worked on strategic
-          projects involving credit risk, climate risk,
-          process automation and scoring models.
-        </p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    I enjoy working at the intersection of technology, business
+    and people. Beyond writing code, I focus on understanding
+    the problem, structuring the solution and helping teams
+    deliver it effectively.
+  </p>
+ <br>
+  <p>
+    I've taken on technical leadership responsibilities,
+    coordinated delivery and worked closely with stakeholders
+    across complex enterprise environments.
+  </p>
+
+      
       </div>
 
     </div>
