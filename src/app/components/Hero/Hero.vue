@@ -58,8 +58,11 @@ onUnmounted(() => {
 
     <div class="profile-frame">
       <img
-        :src="profileImage"
-        alt="Álvaro Ruiz Ramírez"
+         :src="profileImage"
+  alt="Álvaro Ruiz Ramírez"
+  loading="eager"
+  fetchpriority="high"
+  decoding="async"
       />
     </div>
   </div>

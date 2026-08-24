@@ -493,7 +493,7 @@
   ----------------------------------------- */
 
   .experience-list {
-    margin-top: 50px;
+    margin-top: 40px;
   }
 
 
@@ -507,7 +507,12 @@
 
     gap: 12px;
 
-    padding: 30px 0;
+    /*
+      Antes: 30px
+      Ahora: 22px
+      Reduce el espacio entre experiencias
+    */
+    padding: 22px 0;
   }
 
 
@@ -628,6 +633,10 @@
   }
 
 
+  /* -----------------------------------------
+     TITLE
+  ----------------------------------------- */
+
   .experience-container h1 {
     font-size: clamp(46px, 13vw, 60px);
 
@@ -635,20 +644,36 @@
   }
 
 
+  /* -----------------------------------------
+     INTRO
+  ----------------------------------------- */
+
   .experience-intro {
     font-size: 14px;
   }
 
 
+  /* -----------------------------------------
+     LIST
+  ----------------------------------------- */
+
   .experience-list {
-    margin-top: 50px;
+    margin-top: 40px;
   }
 
+
+  /* -----------------------------------------
+     EXPERIENCE ITEM
+  ----------------------------------------- */
 
   .experience-item {
-    padding: 28px 0;
+    padding: 20px 0;
   }
 
+
+  /* -----------------------------------------
+     ROLE
+  ----------------------------------------- */
 
   .experience-info h2 {
     font-size: 20px;
@@ -660,16 +685,28 @@
   }
 
 
+  /* -----------------------------------------
+     COMPANY LOGO
+  ----------------------------------------- */
+
   .company-logo {
     width: 38px;
     height: 38px;
   }
 
 
+  /* -----------------------------------------
+     PROJECT
+  ----------------------------------------- */
+
   .project {
     padding: 15px;
   }
 
+
+  /* -----------------------------------------
+     PROJECT HEADER
+  ----------------------------------------- */
 
   .project-header {
     flex-direction: column;
@@ -681,8 +718,22 @@
     margin-left: 37px;
   }
 
-  .section-label { margin-top: 30px;}
 
-  .experience-container{ margin:5px; } 
+  /* -----------------------------------------
+     SECTION LABEL
+  ----------------------------------------- */
+
+  .section-label {
+    margin-top: 30px;
+  }
+
+
+  /* -----------------------------------------
+     CONTAINER
+  ----------------------------------------- */
+
+  .experience-container {
+    margin: 5px;
+  }
 
 }
