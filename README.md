@@ -2,7 +2,8 @@
 
 Personal portfolio website built with Vue.js to showcase my professional experience, projects, technical skills and background in software engineering, data and automation.
 
-https://github.com/user-attachments/assets/66cc2304-9980-4d8f-a630-1ebb0ba26526
+https://github.com/user-attachments/assets/ed9ffd7b-bc97-4eb7-a91a-fa95420ddb60
+
 
 
 
