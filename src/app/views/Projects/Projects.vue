@@ -3,10 +3,10 @@ const projects = [
  {
   name: 'ARR. Personal Portfolio',
   description:'You are here!. An interactive developer portfolio showcasing projects, technology stacks, professional experience and an interactive CV, all in one place.',
-  technologies: ['Vue', 'Vite', 'JavaScript', 'CSS'],
+  technologies: ['Vue', 'Vite', 'JavaScript'],
   link: '#',
   github: 'https://github.com/Binteak/portfolio'
-},
+}, 
 
 {
   name: 'Banking Data Platform',
@@ -18,13 +18,13 @@ const projects = [
 },
 
 {
-  name: 'City Events App',
+  name: 'Defence Operations Platform',
   description:
-    'Mobile-first event discovery platform for finding concerts, activities and local events based on your city and interests.',
-  technologies: ['Angular', 'Java Spring Boot', 'PostgreSQL'],
+    'Interactive defence operations platform combining data-driven dashboards, geospatial visualization and operational monitoring in a modern web interface.',
+  technologies: ['Vue', 'Vuetify', 'Tailwind CSS', 'Leaflet', 'Chart.js'],
   link: 'Creating..',
   github: ''
-}
+},
 ]
 </script>
 

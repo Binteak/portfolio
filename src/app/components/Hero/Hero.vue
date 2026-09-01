@@ -77,7 +77,7 @@ onUnmounted(() => {
 
       <p class="hero-description">
         I build and lead end-to-end technology solutions across
-  software engineering, data, automation and cloud, combining
+  software engineering, data and automation, combining
   hands-on development with technical leadership and
   business-driven problem solving.
       </p>

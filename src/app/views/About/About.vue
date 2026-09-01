@@ -91,7 +91,7 @@
     <div>
       <strong>Full Stack</strong>
       <p>
-        Angular, Python & APIs
+        Angular, Vue, Python & APIs
       </p>
     </div>
   </div>
@@ -105,7 +105,7 @@
     <div>
       <strong>Data & Analytics</strong>
       <p>
-        PySpark, Databricks & Power BI
+        PySpark, Databricks, Power BI & Data Visualisation
       </p>
     </div>
   </div>
@@ -133,7 +133,7 @@
     <div>
       <strong>DevOps & Quality</strong>
       <p>
-        CI/CD, OpenShift & Code Quality
+        CI/CD, OpenShift, SonarQube, Fortify & Automated Testing
       </p>
     </div>
   </div>

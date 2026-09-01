@@ -1,93 +1,46 @@
 <script setup>
 const technologyGroups = [
-  {
-    title: 'Frontend',
-    technologies: [
-      'TypeScript',
-      'JavaScript',
-      'Angular',
-      'Vue',
-      'HTML',
-      'CSS',
-      'SCSS'
-    ]
-  },
+{
+  title: 'Frontend',
+  technologies: [
+    'TypeScript',
+    'JavaScript',
+    'Angular',
+    'PrimeNG',
+    'Bootstrap',
+    'Vue',
+    'Vuetify',
+    'Tailwind CSS',
+    'HTML',
+    'CSS',
+    'SCSS',
+    'Leaflet'
+  ]
+},
 
-  {
-    title: 'Backend & APIs',
-    technologies: [
-      'Python',
-      'FastAPI',
-      'Django',
-      'Django REST Framework',
-      'REST APIs'
-    ]
-  },
+{
+  title: 'Backend & APIs',
+  technologies: [
+    'Python',
+    'FastAPI',
+    'Django',
+    'Django REST Framework',
+    'REST APIs'
+  ]
+},
 
-  {
-    title: 'Data & Analytics',
-    technologies: [
-      'PySpark',
-      'Databricks',
-      'Power BI',
-      'Data Processing',
-      'Data Visualisation',
-      'Machine Learning'
-    ]
-  },
-
-  {
-    title: 'Databases',
-    technologies: [
-      'Oracle',
-      'PostgreSQL',
-      'SQL'
-    ]
-  },
-
-  {
-    title: 'Cloud & DevOps',
-    technologies: [
-      'AWS',
-      'Red Hat OpenShift',
-      'Docker',
-      'Git',
-      'CI/CD'
-    ]
-  },
-
-  {
-    title: 'Code Quality & Security',
-    technologies: [
-      'SonarQube',
-      'Fortify',
-      'Unit Testing',
-      'Integration Testing',
-      'Secure Development'
-    ]
-  },
-
-  {
-    title: 'Architecture & Engineering',
-    technologies: [
-      'Software Architecture',
-      'Application Modernisation',
-      'System Design',
-      'Gluon'
-    ]
-  },
-
-  {
-    title: 'Automation & Regulatory',
-    technologies: [
-      'Process Automation',
-      'Data Automation',
-      'Credit Risk',
-      'EBA Regulatory',
-      'Climate Risk',
-      'Credit Scoring'
-    ]
-  }
+{
+  title: 'Data & Analytics',
+  technologies: [
+    'PySpark',
+    'Databricks',
+    'Power BI',
+    'Chart.js',
+    'Data Processing',
+    'Data Visualisation',
+    'Machine Learning'
+  ]
+},
 ]
 </script>
 

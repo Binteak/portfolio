@@ -9,6 +9,7 @@ import TechStack from './app/views/TechStack/TechStack.vue'
 import Experience from './app/views/Experience/Experience.vue'
 import Projects from './app/views/Projects/Projects.vue'
 import Contact from './app/views/Contact/Contact.vue'
+// import Linkedin from './app/views/Linkedin/Linkedin.vue'
 
 const pages = [
   'home',
@@ -16,7 +17,8 @@ const pages = [
   'techstack',
   'experience',
   'projects',
-  'contact'
+  'contact',
+  
 ]
 
 const currentPage = ref('home')
@@ -76,6 +78,8 @@ const previousPage = () => {
       <Projects v-else-if="currentPage === 'projects'" />
 
       <Contact v-else-if="currentPage === 'contact'" />
+
+      <!-- <Linkedin v-else-if="currentPage === 'linkedin'" /> -->
 
     </main>
 
