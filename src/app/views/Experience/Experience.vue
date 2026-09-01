@@ -27,6 +27,23 @@ const experiences = [
     logo: eyLogo,
 
     projects: [
+
+          {
+        client: 'Banco Santander',
+        logo: santanderLogo,
+        title: 'Credit Risk & EBA Regulatory',
+        description:
+          'Development of internal Full Stack applications for credit risk and EBA regulatory reporting, working with critical financial processes and enterprise environments. Successfully delivered three applications across four consecutive regulatory cycles, leading a team of three people for one year.',
+        technologies: [
+          'Vue',
+          'Python',
+          'Django REST Framework',
+          'Angular',
+          'SQL',
+          'Oracle',
+        ]
+      },
+
       {
   client: 'BBVA',
   logo: bbvaLogo,
@@ -77,20 +94,6 @@ const experiences = [
     'CI/CD'
   ]
 },
-      {
-        client: 'Banco Santander',
-        logo: santanderLogo,
-        title: 'Credit Risk & EBA Regulatory',
-        description:
-          'Development of internal Full Stack applications for credit risk and EBA regulatory reporting, working with critical financial processes and enterprise environments. Successfully delivered three applications across four consecutive regulatory cycles, leading a team of three people for one year.',
-        technologies: [
-          'Python',
-          'Django REST Framework',
-          'Angular',
-          'SQL',
-          'Oracle',
-        ]
-      },
 
       {
         client: 'Banco Santander',
