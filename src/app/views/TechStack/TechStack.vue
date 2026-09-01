@@ -41,6 +41,22 @@ const technologyGroups = [
     'Machine Learning'
   ]
 },
+
+{
+  title: 'Databases',
+  technologies: [
+    'Oracle',
+    'PostgreSQL',
+    'MySQL',
+    'MongoDB'
+  ]
+},
+
+{ title: 'Cloud & DevOps', technologies: ['AWS', 'Red Hat OpenShift', 'CI/CD', 'SonarQube', 'Fortify', 'Automated Testing'] },
+{ title: 'Code Quality & Security', technologies: ['Code Quality', 'Security Testing', 'Fortify', 'SonarQube', 'Unit Testing', 'Karma/Jasmine', 'Coverage'] },
+// { title: 'Architecture & Engineering', technologies: ['Microservices', 'Event-Driven Architecture', 'Domain-Driven Design', 'Agile Methodologies', 'Scrum', 'Kanban'] }
+
+
 ]
 </script>
 

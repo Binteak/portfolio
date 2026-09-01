@@ -22,7 +22,7 @@ const projects = [
   description:
     'Interactive defence operations platform combining data-driven dashboards, geospatial visualization and operational monitoring in a modern web interface.',
   technologies: ['Vue', 'Vuetify', 'Tailwind CSS', 'Leaflet', 'Chart.js'],
-  link: 'Creating..',
+
   github: ''
 },
 ]
