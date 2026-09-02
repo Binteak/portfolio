@@ -2,7 +2,7 @@
 const projects = [
  {
   name: 'ARR. Personal Portfolio',
-  description:'You are here!. An interactive developer portfolio showcasing projects, technology stacks, professional experience and an interactive CV, all in one place.',
+  description:'You are here!. An interactive Mobile First developer portfolio showcasing projects, technology stacks, professional experience and an interactive CV, all in one place.',
   technologies: ['Vue', 'Vite', 'JavaScript'],
   link: '#',
   github: 'https://github.com/Binteak/portfolio'
@@ -11,7 +11,7 @@ const projects = [
 {
   name: 'Banking Data Platform',
   description:
-    'Web-based banking data platform for managing data workflows, including data ingestion, housekeeping, data quality controls and interactive risk reporting.',
+    'Web-based banking data WEB platform for managing data workflows, including data ingestion, housekeeping, data quality controls and interactive risk reporting.',
   technologies: ['Angular', 'TypeScript', 'Python/Django', 'PostgreSQL'],
   link: 'https://banking-data-platform-frontend.onrender.com/',
   github: 'https://github.com/Binteak/bankingDataPlatform_frontend'
@@ -20,10 +20,10 @@ const projects = [
 {
   name: 'Defence Operations Platform',
   description:
-    'Interactive defence operations platform combining data-driven dashboards, geospatial visualization and operational monitoring in a modern web interface.',
+    'Interactive defence operations WEB platform combining data-driven dashboards, geospatial visualization and operational monitoring in a modern web interface.',
   technologies: ['Vue', 'Vuetify', 'Tailwind CSS', 'Leaflet', 'Chart.js'],
-
-  github: ''
+  link: 'https://defense-application-frontend.onrender.com',
+  github: 'https://github.com/Binteak/defense-application-frontend'
 },
 ]
 </script>
