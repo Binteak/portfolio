@@ -1,61 +1,96 @@
 <script setup>
 const technologyGroups = [
 {
-  title: 'Frontend',
-  technologies: [
-    'TypeScript',
-    'JavaScript',
-    'Angular',
-    'PrimeNG',
-    'Bootstrap',
-    'Vue',
-    'Vuetify',
-    'Tailwind CSS',
-    'HTML',
-    'CSS',
-    'SCSS',
-    'Leaflet'
-  ]
+title: 'Frontend',
+technologies: [
+'TypeScript',
+'JavaScript',
+'Angular',
+'Vue.js',
+'PrimeNG',
+'Vuetify',
+'Tailwind CSS',
+'Bootstrap',
+'HTML5',
+'CSS3',
+'SCSS',
+'Leaflet'
+]
 },
 
 {
-  title: 'Backend & APIs',
-  technologies: [
-    'Python',
-    'FastAPI',
-    'Django',
-    'Django REST Framework',
-    'REST APIs'
-  ]
+title: 'Backend & APIs',
+technologies: [
+'Python',
+'FastAPI',
+'Django',
+'Django REST Framework',
+'REST APIs'
+]
 },
 
 {
-  title: 'Data & Analytics',
-  technologies: [
-    'PySpark',
-    'Databricks',
-    'Power BI',
-    'Chart.js',
-    'ApexCharts',
-    'Data Processing',
-    'Data Visualisation',
-    'Machine Learning'
-  ]
+title: 'Data & Analytics',
+technologies: [
+'PySpark',
+'Databricks',
+'Power BI',
+'Chart.js',
+'ApexCharts',
+'Data Processing',
+'Data Visualisation',
+'Machine Learning'
+]
 },
 
 {
-  title: 'Databases',
-  technologies: [
-    'Oracle',
-    'PostgreSQL',
-    'MySQL',
- 
-  ]
+title: 'Databases',
+technologies: [
+'PostgreSQL',
+'Oracle',
+'MySQL',
+'SQL'
+]
 },
 
-{ title: 'Cloud & DevOps', technologies: ['AWS', 'Red Hat OpenShift', 'CI/CD', 'SonarQube', 'Fortify'] },
-{ title: 'Code Quality & Security', technologies: ['Code Quality', 'Security Testing', 'Fortify', 'SonarQube', 'Unit Testing', 'Karma/Jasmine', 'Coverage'] },
-// { title: 'Architecture & Engineering', technologies: ['Microservices', 'Event-Driven Architecture', 'Domain-Driven Design', 'Agile Methodologies', 'Scrum', 'Kanban'] }
+{
+title: 'Cloud & DevOps',
+technologies: [
+'AWS',
+'Red Hat OpenShift',
+'Docker',
+'CI/CD',
+'Git',
+'GitHub',
+'Render',
+'SonarQube',
+'Fortify'
+]
+},
+
+{
+title: 'Testing & Quality',
+technologies: [
+'Unit Testing',
+'Karma',
+'Jasmine',
+'Test Coverage',
+'Code Quality',
+'Security Testing'
+]
+},
+
+{
+title: 'Architecture & Engineering',
+technologies: [
+'RESTful Architecture',
+'Microservices',
+'Event-Driven Architecture',
+'Agile',
+'Scrum',
+'Kanban'
+]
+}
 
 
 ]
