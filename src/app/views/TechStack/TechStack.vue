@@ -86,11 +86,19 @@ technologies: [
 'RESTful Architecture',
 'Microservices',
 'Event-Driven Architecture',
+]
+},
+{
+title: 'Methodology',
+technologies: [
 'Agile',
 'Scrum',
+'JIRA',
 'Kanban'
 ]
-}
+},
+
+
 
 
 ]
