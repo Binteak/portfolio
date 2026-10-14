@@ -25,6 +25,15 @@ const projects = [
   link: 'https://defense-application-frontend.onrender.com',
   github: 'https://github.com/Binteak/defense-application-frontend'
 },
+
+{
+  name: 'InmobiliAI',
+  description:
+  'AI-powered real estate platform that extracts data from PDFs, identifies missing information, and pre-fills editable forms for human review before generating property listings for platforms such as Idealista. Currently under development. The GitHub repository includes sample PDF documents for testing.',
+  technologies: ['Angular', 'TypeScript', 'Python', 'FastAPI', 'LLMs'],
+  link: 'https://inmobiliai-frontend.onrender.com/',
+  github: 'https://github.com/Binteak/inmobiliai-frontend'
+},
 ]
 </script>
 
