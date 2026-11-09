@@ -1,5 +1,6 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
+import { lang, setLang } from '../../../i18n'
 
 const props = defineProps({
   currentPage: {
@@ -11,6 +12,31 @@ const props = defineProps({
 const emit = defineEmits(['navigate'])
 
 const menuOpen = ref(false)
+
+const content = {
+  en: {
+    about: 'About',
+    techstack: 'Tech Stack',
+    experience: 'Experience',
+    projects: 'Projects',
+    contact: 'Contact',
+    toggleMenu: 'Toggle navigation menu',
+    language: 'Language'
+  },
+  es: {
+    about: 'Sobre mí',
+    techstack: 'Tecnologías',
+    experience: 'Experiencia',
+    projects: 'Proyectos',
+    contact: 'Contacto',
+    toggleMenu: 'Abrir o cerrar el menú',
+    language: 'Idioma'
+  }
+}
+
+const c = computed(() => content[lang.value])
+
+const links = ['about', 'techstack', 'experience', 'projects']
 
 function navigate(page) {
   emit('navigate', page)
@@ -44,67 +70,68 @@ function toggleMenu() {
     <div class="nav-links">
 
       <button
-        :class="{ active: currentPage === 'about' }"
-        @click="navigate('about')"
+        v-for="link in links"
+        :key="link"
+        :class="{ active: currentPage === link }"
+        @click="navigate(link)"
       >
-        About
-      </button>
-
-      <button
-        :class="{ active: currentPage === 'techstack' }"
-        @click="navigate('techstack')"
-      >
-        Tech Stack
-      </button>
-
-      <button
-        :class="{ active: currentPage === 'experience' }"
-        @click="navigate('experience')"
-      >
-        Experience
-      </button>
-
-      <button
-        :class="{ active: currentPage === 'projects' }"
-        @click="navigate('projects')"
-      >
-        Projects
+        {{ c[link] }}
       </button>
 
     </div>
 
 
     <!-- =====================================================
-         DESKTOP CONTACT
+         RIGHT SIDE: LANGUAGE + CONTACT + MOBILE MENU BUTTON
     ====================================================== -->
 
-    <button
-      class="nav-button"
-      :class="{ active: currentPage === 'contact' }"
-      @click="navigate('contact')"
-    >
-      Contact
-      <span>→</span>
-    </button>
+    <div class="nav-right">
 
+      <div
+        class="lang-switch"
+        role="group"
+        :aria-label="c.language"
+      >
+        <button
+          :class="{ active: lang === 'en' }"
+          :aria-pressed="lang === 'en'"
+          @click="setLang('en')"
+        >
+          EN
+        </button>
+        <button
+          :class="{ active: lang === 'es' }"
+          :aria-pressed="lang === 'es'"
+          @click="setLang('es')"
+        >
+          ES
+        </button>
+      </div>
 
-    <!-- =====================================================
-         MOBILE MENU BUTTON
-    ====================================================== -->
+      <button
+        class="nav-button"
+        :class="{ active: currentPage === 'contact' }"
+        @click="navigate('contact')"
+      >
+        {{ c.contact }}
+        <span>→</span>
+      </button>
 
-    <button
-      class="menu-toggle"
-      :class="{ open: menuOpen }"
-      @click="toggleMenu"
-      aria-label="Toggle navigation menu"
-      :aria-expanded="menuOpen"
-    >
+      <button
+        class="menu-toggle"
+        :class="{ open: menuOpen }"
+        @click="toggleMenu"
+        :aria-label="c.toggleMenu"
+        :aria-expanded="menuOpen"
+      >
 
-      <span></span>
-      <span></span>
-      <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
 
-    </button>
+      </button>
+
+    </div>
 
 
     <!-- =====================================================
@@ -117,31 +144,12 @@ function toggleMenu() {
     >
 
       <button
-        :class="{ active: currentPage === 'about' }"
-        @click="navigate('about')"
+        v-for="link in links"
+        :key="link"
+        :class="{ active: currentPage === link }"
+        @click="navigate(link)"
       >
-        About
-      </button>
-
-      <button
-        :class="{ active: currentPage === 'techstack' }"
-        @click="navigate('techstack')"
-      >
-        Tech Stack
-      </button>
-
-      <button
-        :class="{ active: currentPage === 'experience' }"
-        @click="navigate('experience')"
-      >
-        Experience
-      </button>
-
-      <button
-        :class="{ active: currentPage === 'projects' }"
-        @click="navigate('projects')"
-      >
-        Projects
+        {{ c[link] }}
       </button>
 
       <button
@@ -149,7 +157,7 @@ function toggleMenu() {
         :class="{ active: currentPage === 'contact' }"
         @click="navigate('contact')"
       >
-        Contact
+        {{ c.contact }}
         <span>→</span>
       </button>
 

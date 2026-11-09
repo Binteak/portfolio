@@ -3,8 +3,28 @@ import profileImage from '../../../assets/images/profile.jpeg'
 </script> -->
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
 import profileImage from '../../../assets/images/profile.jpeg'
+import { lang } from '../../../i18n'
+
+const content = {
+  en: {
+    status: 'Available for new opportunities',
+    subtitle: 'Senior Full Stack Developer · Angular · Python · Applied AI',
+    description:
+      "9 years in banking building products end to end, from the business case to production. I combine hands-on development and technical leadership, and I'm now applying LLMs and AI agents to real products.",
+    more: 'More About me'
+  },
+  es: {
+    status: 'Disponible para nuevas oportunidades',
+    subtitle: 'Senior Full Stack Developer · Angular · Python · IA aplicada',
+    description:
+      'Nueve años en banca construyendo productos de principio a fin, del caso de negocio a producción. Combino desarrollo y liderazgo técnico, y ahora aplico LLMs y agentes de IA a productos reales.',
+    more: 'Más sobre mí'
+  }
+}
+
+const c = computed(() => content[lang.value])
 
 defineEmits(['navigate'])
 
@@ -39,7 +59,7 @@ onUnmounted(() => {
 
       <div class="status">
         <span class="status-dot"></span>
-        Available for new opportunities
+        {{ c.status }}
       </div>
 
       <!-- <h1>
@@ -72,14 +92,11 @@ onUnmounted(() => {
  
 
       <h2>
-        Senior Full Stack Developer · Angular · Python · Applied AI
+        {{ c.subtitle }}
       </h2>
 
       <p class="hero-description">
-        9 years in banking building products end to end, from the
-        business case to production. I combine hands-on development
-        and technical leadership, and I'm now applying LLMs and
-        AI agents to real products.
+        {{ c.description }}
       </p>
 
       <!-- <div class="hero-actions">
@@ -107,7 +124,7 @@ onUnmounted(() => {
     class="primary-button"
     @click="$emit('navigate', 'about')"
   >
-    More About me
+    {{ c.more }}
     <!-- <span>↓</span> -->
   </button>
 

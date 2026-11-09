@@ -1,6 +1,29 @@
 <script setup>
 
+import { computed } from 'vue'
 import profileImage from '../../../assets/images/profile.jpeg'
+import { lang } from '../../../i18n'
+
+const content = {
+  en: {
+    label: 'CONTACT',
+    title: "Let's build something",
+    highlight: 'great.',
+    text: 'Open to new opportunities, collaborations and interesting projects.',
+    connect: "Let's connect.",
+    photo: 'Profile photo'
+  },
+  es: {
+    label: 'CONTACTO',
+    title: 'Construyamos algo',
+    highlight: 'grande.',
+    text: 'Abierto a nuevas oportunidades, colaboraciones y proyectos interesantes.',
+    connect: 'Hablemos.',
+    photo: 'Foto de perfil'
+  }
+}
+
+const c = computed(() => content[lang.value])
 
 </script>
 
@@ -12,21 +35,21 @@ import profileImage from '../../../assets/images/profile.jpeg'
       <div class="contact-content">
 
         <div class="section-label">
-          CONTACT
+          {{ c.label }}
         </div>
 
         <h1>
-          Let's build something
-          <span>great.</span>
+          {{ c.title }}
+          <span>{{ c.highlight }}</span>
         </h1>
 
         <p>
-          Open to new opportunities, collaborations and interesting projects.
+          {{ c.text }}
         </p>
 
         <div class="connect-text">
           <span class="connect-dot"></span>
-          Let's connect.
+          {{ c.connect }}
         </div>
 
         <div class="contact-actions">
@@ -87,7 +110,7 @@ import profileImage from '../../../assets/images/profile.jpeg'
         <div class="contact-profile-frame">
           <img
             :src="profileImage"
-            alt="Profile photo"
+            :alt="c.photo"
           />
         </div>
 

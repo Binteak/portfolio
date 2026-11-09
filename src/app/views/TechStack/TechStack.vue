@@ -1,4 +1,56 @@
 <script setup>
+import { computed } from 'vue'
+import { lang } from '../../../i18n'
+
+const groupTitlesEs = {
+  'Frontend': 'Frontend',
+  'Backend & APIs': 'Backend y APIs',
+  'Data & Machine Learning': 'Datos y Machine Learning',
+  'Databases': 'Bases de datos',
+  'Cloud & DevOps': 'Cloud y DevOps',
+  'Testing & Quality': 'Testing y calidad',
+  'Applied AI': 'IA aplicada',
+  'Methodology & Leadership': 'Metodología y liderazgo'
+}
+
+const technologiesEs = {
+  'Signals & Standalone Components': 'Signals y Standalone Components',
+  'Responsive Design': 'Diseño responsive',
+  'Unit Testing': 'Testing unitario',
+  'SOLID Principles': 'Principios SOLID',
+  'Document Data Extraction': 'Extracción de datos de documentos',
+  'Mentoring': 'Mentoría'
+}
+
+const content = {
+  en: {
+    label: 'TECH STACK',
+    title: 'Technologies I',
+    highlight: 'work with.',
+    description:
+      'Technologies, tools and engineering practices I use to design, build and deploy modern software solutions.'
+  },
+  es: {
+    label: 'TECNOLOGÍAS',
+    title: 'Tecnologías con las que',
+    highlight: 'trabajo.',
+    description:
+      'Tecnologías, herramientas y prácticas de ingeniería que uso para diseñar, construir y desplegar soluciones de software modernas.'
+  }
+}
+
+const c = computed(() => content[lang.value])
+
+const translatedGroups = computed(() =>
+  technologyGroups.map((group) => ({
+    key: group.title,
+    title: lang.value === 'es' ? groupTitlesEs[group.title] ?? group.title : group.title,
+    technologies: group.technologies.map((technology) =>
+      lang.value === 'es' ? technologiesEs[technology] ?? technology : technology
+    )
+  }))
+)
+
 const technologyGroups = [
   {
     title: 'Frontend',
@@ -117,24 +169,23 @@ const technologyGroups = [
     <div class="tech-container">
 
       <div class="section-label">
-        TECH STACK
+        {{ c.label }}
       </div>
 
       <h1>
-        Technologies I
-        <span>work with.</span>
+        {{ c.title }}
+        <span>{{ c.highlight }}</span>
       </h1>
 
       <p class="tech-description">
-        Technologies, tools and engineering practices I use to
-        design, build and deploy modern software solutions.
+        {{ c.description }}
       </p>
 
       <div class="tech-groups">
 
         <div
-          v-for="group in technologyGroups"
-          :key="group.title"
+          v-for="group in translatedGroups"
+          :key="group.key"
           class="tech-group"
         >
 

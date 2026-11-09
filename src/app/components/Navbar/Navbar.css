@@ -169,6 +169,69 @@
 }
 
 /* =========================================================
+   RIGHT SIDE + LANGUAGE SWITCH
+========================================================= */
+
+.nav-right {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+.lang-switch {
+  display: flex;
+  align-items: center;
+
+  padding: 3px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.lang-switch button {
+  padding: 6px 9px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: transparent;
+
+  color: #8f8f9d;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.lang-switch button:hover {
+  color: #ffffff;
+}
+
+.lang-switch button.active {
+  background: rgba(139, 92, 246, 0.22);
+
+  color: #ffffff;
+
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.25);
+}
+
+.lang-switch button:focus-visible {
+  outline: 2px solid #8b5cf6;
+  outline-offset: 1px;
+}
+
+
+/* =========================================================
    HAMBURGER
 ========================================================= */
 

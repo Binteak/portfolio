@@ -1,54 +1,106 @@
 <script setup>
-const projects = [
+import { computed } from 'vue'
+import { lang } from '../../../i18n'
+
+const projectList = [
   {
-    name: 'Rumbo · AI Travel Agent',
-    description:
-      'Agent that plans a complete trip (destination, weather, budget and itinerary) from a conversation. Hand-written agentic loop on the Claude API with tool use (no LangChain), Pydantic-typed tools and a cost-free demo mode. The Angular interface shows the agent reasoning live via Server-Sent Events; stateless backend with PostgreSQL and Redis, deployed with Docker, Kubernetes and GitHub Actions CI.',
+    name: { en: 'Rumbo · AI Travel Agent', es: 'Rumbo · Agente de viajes con IA' },
+    description: {
+      en: 'Agent that plans a complete trip (destination, weather, budget and itinerary) from a conversation. Hand-written agentic loop on the Claude API with tool use (no LangChain), Pydantic-typed tools and a cost-free demo mode. The Angular interface shows the agent reasoning live via Server-Sent Events; stateless backend with PostgreSQL and Redis, deployed with Docker, Kubernetes and GitHub Actions CI.',
+      es: 'Agente que planifica un viaje completo (destino, clima, presupuesto e itinerario) a partir de una conversación. Bucle agéntico escrito a mano sobre la API de Claude con tool use (sin LangChain), herramientas tipadas con Pydantic y un modo demo sin coste. La interfaz en Angular muestra el razonamiento del agente en directo con Server-Sent Events; backend sin estado con PostgreSQL y Redis, desplegado con Docker, Kubernetes y CI en GitHub Actions.'
+    },
     technologies: ['Angular', 'Python', 'FastAPI', 'Claude API', 'PostgreSQL', 'Redis', 'Kubernetes'],
     link: 'https://rumbo-frontend.onrender.com',
     github: 'https://github.com/Binteak/rumbo-ai'
   },
   {
-    name: 'InmobiliAI',
-    description:
-      'Turns a real estate PDF into a reviewable listing draft: text extraction with PyMuPDF, field extraction to JSON with an LLM and an editable form that flags missing data instead of inventing it. The description is generated only from extracted facts. Includes a demo mode without API key.',
+    name: { en: 'InmobiliAI', es: 'InmobiliAI' },
+    description: {
+      en: 'Turns a real estate PDF into a reviewable listing draft: text extraction with PyMuPDF, field extraction to JSON with an LLM and an editable form that flags missing data instead of inventing it. The description is generated only from extracted facts. Includes a demo mode without API key.',
+      es: 'Convierte un PDF inmobiliario en un borrador de anuncio revisable: extracción de texto con PyMuPDF, extracción de campos a JSON con un LLM y un formulario editable que marca los datos que faltan en lugar de inventarlos. La descripción se genera solo a partir de hechos extraídos. Incluye un modo demo sin API key.'
+    },
     technologies: ['Angular', 'TypeScript', 'Python', 'FastAPI', 'LLMs', 'Docker'],
     link: 'https://inmobiliai-frontend.onrender.com/',
     github: 'https://github.com/Binteak/inmobiliAI_frontend'
   },
   {
-    name: 'Banking Data Platform',
-    description:
-      'Complete risk data workflow with simulated data: CSV ingestion, data quality controls, housekeeping, data exploration and metrics reporting. Three containers orchestrated with Docker Compose, environment-based configuration and backend and frontend tests.',
+    name: { en: 'Banking Data Platform', es: 'Banking Data Platform' },
+    description: {
+      en: 'Complete risk data workflow with simulated data: CSV ingestion, data quality controls, housekeeping, data exploration and metrics reporting. Three containers orchestrated with Docker Compose, environment-based configuration and backend and frontend tests.',
+      es: 'Flujo completo de datos de riesgo con datos simulados: carga de CSV, controles de calidad del dato, housekeeping, exploración y reporting de métricas. Tres contenedores orquestados con Docker Compose, configuración por variables de entorno y tests de backend y frontend.'
+    },
     technologies: ['Angular', 'PrimeNG', 'Django REST', 'PostgreSQL', 'Docker'],
     link: 'https://banking-data-platform-frontend.onrender.com/',
     github: 'https://github.com/Binteak/bankingDataPlatform_frontend'
   },
   {
-    name: 'Defence Operations Platform',
-    description:
-      'Operations dashboard with an interactive Leaflet map where points move and the view updates automatically, combined with tracking charts in Chart.js.',
+    name: { en: 'Defence Operations Platform', es: 'Defence Operations Platform' },
+    description: {
+      en: 'Operations dashboard with an interactive Leaflet map where points move and the view updates automatically, combined with tracking charts in Chart.js.',
+      es: 'Panel de operaciones con un mapa interactivo en Leaflet en el que los puntos se desplazan y la vista se actualiza sola, junto con gráficas de seguimiento en Chart.js.'
+    },
     technologies: ['Vue', 'Vuetify', 'Tailwind CSS', 'Leaflet', 'Chart.js'],
     link: 'https://defense-application-frontend.onrender.com',
     github: 'https://github.com/Binteak/defense-application-frontend'
   },
   {
-    name: 'Internal Channel Bot',
-    description:
-      'Python automation bot for a real estate agency (in development). A Telegram bot connected to Google Drive, Sheets and Calendar that notifies about new files, daily appointments and team availability. Modular architecture, scheduled runs with GitHub Actions, simulator mode, tests and secrets kept out of the code.',
+    name: { en: 'Internal Channel Bot', es: 'Bot de canal interno' },
+    description: {
+      en: 'Python automation bot for a real estate agency (in development). A Telegram bot connected to Google Drive, Sheets and Calendar that notifies about new files, daily appointments and team availability. Modular architecture, scheduled runs with GitHub Actions, simulator mode, tests and secrets kept out of the code.',
+      es: 'Bot de automatización en Python para una inmobiliaria (en desarrollo). Un bot de Telegram conectado a Google Drive, Sheets y Calendar que avisa de archivos nuevos, citas del día y disponibilidad del equipo. Arquitectura modular, ejecuciones programadas con GitHub Actions, modo simulador, tests y secretos fuera del código.'
+    },
     technologies: ['Python', 'Telegram', 'Google APIs', 'GitHub Actions'],
     link: '#',
     github: '#'
   },
   {
-    name: 'ARR. Personal Portfolio',
-    description:
-      'You are here! A mobile-first landing page that works as an interactive CV, showcasing my projects, professional experience and tech stack. Deployed on Render.',
+    name: { en: 'ARR. Personal Portfolio', es: 'ARR. Portfolio personal' },
+    description: {
+      en: 'You are here! A mobile-first landing page that works as an interactive CV, showcasing my projects, professional experience and tech stack. Deployed on Render.',
+      es: '¡Estás aquí! Una landing page mobile first que funciona como CV interactivo, con mis proyectos, mi experiencia profesional y mis tecnologías. Disponible en inglés y español y desplegada en Render.'
+    },
     technologies: ['Vue', 'Vite', 'JavaScript'],
     link: '#',
     github: 'https://github.com/Binteak/portfolio'
   }
 ]
+
+const content = {
+  en: {
+    label: 'PROJECTS',
+    title: "Things I've",
+    highlight: 'built.',
+    demo: 'View Demo',
+    github: 'View GitHub repository',
+    githubTitle: 'GitHub repository',
+    moreTitle: 'More projects',
+    moreHighlight: 'coming.',
+    moreText: 'Currently adding new projects and experiments.',
+    inProgress: 'In progress'
+  },
+  es: {
+    label: 'PROYECTOS',
+    title: 'Cosas que he',
+    highlight: 'construido.',
+    demo: 'Ver demo',
+    github: 'Ver repositorio en GitHub',
+    githubTitle: 'Repositorio en GitHub',
+    moreTitle: 'Más proyectos',
+    moreHighlight: 'en camino.',
+    moreText: 'Estoy añadiendo nuevos proyectos y experimentos.',
+    inProgress: 'En curso'
+  }
+}
+
+const c = computed(() => content[lang.value])
+
+const projects = computed(() =>
+  projectList.map((project) => ({
+    ...project,
+    name: project.name[lang.value],
+    description: project.description[lang.value]
+  }))
+)
 </script>
 
 <template>
@@ -57,12 +109,12 @@ const projects = [
     <div class="projects-container">
 
       <div class="section-label">
-        PROJECTS
+        {{ c.label }}
       </div>
 
       <h1>
-        Things I've
-        <span>built.</span>
+        {{ c.title }}
+        <span>{{ c.highlight }}</span>
       </h1>
 
       <div class="projects-grid">
@@ -71,7 +123,7 @@ const projects = [
 
         <article
           v-for="(project, index) in projects"
-          :key="project.name"
+          :key="project.github + project.link"
           class="project-card"
         >
 
@@ -92,7 +144,7 @@ const projects = [
     class="project-action demo-action"
   >
     <i class="pi pi-external-link"></i>
-    <span>View Demo</span>
+    <span>{{ c.demo }}</span>
   </a>
 
   <!-- GITHUB -->
@@ -102,8 +154,8 @@ const projects = [
   target="_blank"
   rel="noopener noreferrer"
   class="project-action github-action"
-  aria-label="View GitHub repository"
-  title="GitHub repository"
+  :aria-label="c.github"
+  :title="c.githubTitle"
 >
   <svg
     class="github-icon"
@@ -166,20 +218,19 @@ const projects = [
           <div class="coming-content">
 
             <h3>
-              More projects
-              <span>coming.</span>
+              {{ c.moreTitle }}
+              <span>{{ c.moreHighlight }}</span>
             </h3>
 
             <p>
-              Currently adding new projects
-              and experiments.
+              {{ c.moreText }}
             </p>
 
           </div>
 
           <div class="coming-status">
             <span></span>
-            In progress
+            {{ c.inProgress }}
           </div>
 
         </article>

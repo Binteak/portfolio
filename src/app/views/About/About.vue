@@ -1,4 +1,61 @@
 <script setup>
+import { computed } from 'vue'
+import { lang } from '../../../i18n'
+
+const content = {
+  en: {
+    label: 'ABOUT ME',
+    title: 'Building software',
+    highlight: 'with purpose.',
+    intro:
+      'Senior Full Stack Developer with 9 years in the banking sector, building products end to end, from the business case to production. With a degree in Statistics and Business, I started as a Data Scientist and spent 8 years at EY working for BBVA, Banco Santander and Liberbank: Angular and Vue applications with Python backends, data pipelines on AWS and deployments on OpenShift with CI/CD.',
+    whoTitle: 'Who I am',
+    who:
+      "A Full Stack Developer (Angular · Python) who combines hands-on engineering with technical leadership. I've worked as Tech Lead and Team Lead, dealing directly with clients, and I enjoy turning complex requirements into reliable software.",
+    whatTitle: 'What I do',
+    what:
+      "I design and build complete solutions: data, APIs, interfaces and deployment. Lately I've been applying LLMs in my own projects, such as an agent built on the Claude API and a document extraction tool, both containerised and deployed with CI/CD.",
+    specialized: 'SPECIALIZED IN',
+    specializations: [
+      { icon: '</>', title: 'Full Stack', text: 'Angular, Vue, TypeScript, Python, FastAPI & Django' },
+      { icon: '◈', title: 'Data & Analytics', text: 'PySpark, DuckDB, Databricks, AWS & Power BI' },
+      { icon: '◉', title: 'Banking & Regulatory', text: 'Credit Risk, EBA Reporting & Audit Automation' },
+      { icon: '⚙', title: 'DevOps & Quality', text: 'Docker, Kubernetes, OpenShift, GitHub Actions & SonarQube' }
+    ],
+    beyond: 'BEYOND THE CODE',
+    beyond1:
+      'I enjoy working at the intersection of technology, business and people: understanding the problem, structuring the solution and helping the team deliver it.',
+    beyond2:
+      "I've led teams, planned sprints and roadmaps, mentored junior profiles and worked side by side with Product Owners and stakeholders in demanding enterprise environments."
+  },
+  es: {
+    label: 'SOBRE MÍ',
+    title: 'Software hecho',
+    highlight: 'con propósito.',
+    intro:
+      'Senior Full Stack Developer con 9 años en el sector bancario, construyendo productos de principio a fin, del caso de negocio a producción. Graduado en Estadística y Empresa, empecé como Data Scientist y he pasado 8 años en EY trabajando para BBVA, Banco Santander y Liberbank: aplicaciones Angular y Vue con backends en Python, pipelines de datos en AWS y despliegues en OpenShift con CI/CD.',
+    whoTitle: 'Quién soy',
+    who:
+      'Un Full Stack Developer (Angular · Python) que combina el desarrollo con el liderazgo técnico. He sido Tech Lead y Team Lead, con trato directo con cliente, y disfruto convirtiendo requisitos complejos en software fiable.',
+    whatTitle: 'Qué hago',
+    what:
+      'Diseño y construyo soluciones completas: datos, APIs, interfaces y despliegue. Últimamente aplico LLMs en proyectos propios, como un agente sobre la API de Claude y una herramienta de extracción de documentos, ambos en contenedores y desplegados con CI/CD.',
+    specialized: 'ESPECIALIZADO EN',
+    specializations: [
+      { icon: '</>', title: 'Full Stack', text: 'Angular, Vue, TypeScript, Python, FastAPI y Django' },
+      { icon: '◈', title: 'Datos y analítica', text: 'PySpark, DuckDB, Databricks, AWS y Power BI' },
+      { icon: '◉', title: 'Banca y regulación', text: 'Riesgo de crédito, reporting EBA y automatización de auditoría' },
+      { icon: '⚙', title: 'DevOps y calidad', text: 'Docker, Kubernetes, OpenShift, GitHub Actions y SonarQube' }
+    ],
+    beyond: 'MÁS ALLÁ DEL CÓDIGO',
+    beyond1:
+      'Me gusta trabajar donde se cruzan la tecnología, el negocio y las personas: entender el problema, estructurar la solución y ayudar al equipo a entregarla.',
+    beyond2:
+      'He liderado equipos, planificado sprints y roadmaps, acompañado a perfiles junior y trabajado codo con codo con Product Owners y stakeholders en entornos corporativos exigentes.'
+  }
+}
+
+const c = computed(() => content[lang.value])
 </script>
 
 <template>
@@ -9,21 +66,16 @@
       <!-- HEADER -->
 
       <div class="section-label">
-        ABOUT ME
+        {{ c.label }}
       </div>
 
       <h1>
-        Building software
-        <span>with purpose.</span>
+        {{ c.title }}
+        <span>{{ c.highlight }}</span>
       </h1>
 
       <p class="about-description">
-        Senior Full Stack Developer with 9 years in the banking sector,
-        building products end to end, from the business case to production.
-        With a degree in Statistics and Business, I started as a Data Scientist
-        and spent 8 years at EY working for BBVA, Banco Santander and Liberbank:
-        Angular and Vue applications with Python backends, data pipelines on AWS
-        and deployments on OpenShift with CI/CD.
+        {{ c.intro }}
       </p>
 
 
@@ -38,14 +90,11 @@
           </div>
 
           <h3>
-            Who I am
+            {{ c.whoTitle }}
           </h3>
 
           <p>
-            A Full Stack Developer (Angular · Python) who combines hands-on
-            engineering with technical leadership. I've worked as Tech Lead and
-            Team Lead, dealing directly with clients, and I enjoy turning complex
-            requirements into reliable software.
+            {{ c.who }}
           </p>
 
         </div>
@@ -58,14 +107,11 @@
           </div>
 
           <h3>
-            What I do
+            {{ c.whatTitle }}
           </h3>
 
           <p>
-            I design and build complete solutions: data, APIs, interfaces and
-            deployment. Lately I've been applying LLMs in my own projects, such as
-            an agent built on the Claude API and a document extraction tool,
-            both containerised and deployed with CI/CD.
+            {{ c.what }}
           </p>
 
         </div>
@@ -78,67 +124,29 @@
       <div class="specializations">
 
         <div class="section-label small-label">
-          SPECIALIZED IN
+          {{ c.specialized }}
         </div>
 
         <div class="specialization-grid">
 
-  <div class="specialization">
-    <span class="specialization-icon">
-      &lt;/&gt;
-    </span>
+          <div
+            v-for="item in c.specializations"
+            :key="item.icon"
+            class="specialization"
+          >
+            <span class="specialization-icon">
+              {{ item.icon }}
+            </span>
 
-    <div>
-      <strong>Full Stack</strong>
-      <p>
-        Angular, Vue, TypeScript, Python, FastAPI & Django
-      </p>
-    </div>
-  </div>
+            <div>
+              <strong>{{ item.title }}</strong>
+              <p>
+                {{ item.text }}
+              </p>
+            </div>
+          </div>
 
-
-  <div class="specialization">
-    <span class="specialization-icon">
-      ◈
-    </span>
-
-    <div>
-      <strong>Data & Analytics</strong>
-      <p>
-        PySpark, DuckDB, Databricks, AWS & Power BI
-      </p>
-    </div>
-  </div>
-
-
-  <div class="specialization">
-    <span class="specialization-icon">
-      ◉
-    </span>
-
-    <div>
-      <strong>Banking & Regulatory</strong>
-      <p>
-        Credit Risk, EBA Reporting & Audit Automation
-      </p>
-    </div>
-  </div>
-
-
-  <div class="specialization">
-    <span class="specialization-icon">
-      ⚙
-    </span>
-
-    <div>
-      <strong>DevOps & Quality</strong>
-      <p>
-        Docker, Kubernetes, OpenShift, GitHub Actions & SonarQube
-      </p>
-    </div>
-  </div>
-
-</div>
+        </div>
 
       </div>
 
@@ -148,20 +156,16 @@
       <div class="about-footer">
 
         <div class="section-label">
-          BEYOND THE CODE
+          {{ c.beyond }}
         </div>
 
         <p>
-    I enjoy working at the intersection of technology, business
-    and people: understanding the problem, structuring the solution
-    and helping the team deliver it.
-  </p>
+          {{ c.beyond1 }}
+        </p>
  <br>
   <p>
-    I've led teams, planned sprints and roadmaps, mentored junior
-    profiles and worked side by side with Product Owners and
-    stakeholders in demanding enterprise environments.
-  </p>
+          {{ c.beyond2 }}
+        </p>
 
       
       </div>
