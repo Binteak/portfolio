@@ -18,12 +18,12 @@
       </h1>
 
       <p class="about-description">
-        I'm a Senior technology consultant and Full Stack Developer with
-  7+ years of experience delivering software, data and automation
-  solutions across financial and regulatory environments. I've led
-  teams, coordinated delivery and delegated responsibilities across
-  planning, roadmaps and execution, working closely with stakeholders
-  to turn complex requirements into reliable technology solutions.
+        Senior Full Stack Developer with 9 years in the banking sector,
+        building products end to end, from the business case to production.
+        With a degree in Statistics and Business, I started as a Data Scientist
+        and spent 8 years at EY working for BBVA, Banco Santander and Liberbank:
+        Angular and Vue applications with Python backends, data pipelines on AWS
+        and deployments on OpenShift with CI/CD.
       </p>
 
 
@@ -42,10 +42,10 @@
           </h3>
 
           <p>
-             A Senior technology consultant and Full Stack Developer who
-  combines hands-on engineering with technical leadership.
-  I enjoy understanding complex problems, defining practical
-  solutions and helping teams turn them into reliable software.
+            A Full Stack Developer (Angular · Python) who combines hands-on
+            engineering with technical leadership. I've worked as Tech Lead and
+            Team Lead, dealing directly with clients, and I enjoy turning complex
+            requirements into reliable software.
           </p>
 
         </div>
@@ -62,10 +62,10 @@
           </h3>
 
           <p>
-            I design and develop end-to-end solutions across frontend,
-  backend, data and automation, while contributing to
-  architecture, application modernisation, DevOps and
-  technical delivery.
+            I design and build complete solutions: data, APIs, interfaces and
+            deployment. Lately I've been applying LLMs in my own projects, such as
+            an agent built on the Claude API and a document extraction tool,
+            both containerised and deployed with CI/CD.
           </p>
 
         </div>
@@ -91,7 +91,7 @@
     <div>
       <strong>Full Stack</strong>
       <p>
-        Angular, Vue, Python & APIs
+        Angular, Vue, TypeScript, Python, FastAPI & Django
       </p>
     </div>
   </div>
@@ -105,7 +105,7 @@
     <div>
       <strong>Data & Analytics</strong>
       <p>
-        PySpark, Databricks, Power BI & Data Visualisation
+        PySpark, DuckDB, Databricks, AWS & Power BI
       </p>
     </div>
   </div>
@@ -117,9 +117,9 @@
     </span>
 
     <div>
-      <strong>Automation & Regulatory</strong>
+      <strong>Banking & Regulatory</strong>
       <p>
-        Banking, Risk & Regulatory
+        Credit Risk, EBA Reporting & Audit Automation
       </p>
     </div>
   </div>
@@ -133,7 +133,7 @@
     <div>
       <strong>DevOps & Quality</strong>
       <p>
-        CI/CD, OpenShift, SonarQube, Fortify & Automated Testing
+        Docker, Kubernetes, OpenShift, GitHub Actions & SonarQube
       </p>
     </div>
   </div>
@@ -153,15 +153,14 @@
 
         <p>
     I enjoy working at the intersection of technology, business
-    and people. Beyond writing code, I focus on understanding
-    the problem, structuring the solution and helping teams
-    deliver it effectively.
+    and people: understanding the problem, structuring the solution
+    and helping the team deliver it.
   </p>
  <br>
   <p>
-    I've taken on technical leadership responsibilities,
-    coordinated delivery and worked closely with stakeholders
-    across complex enterprise environments.
+    I've led teams, planned sprints and roadmaps, mentored junior
+    profiles and worked side by side with Product Owners and
+    stakeholders in demanding enterprise environments.
   </p>
 
       

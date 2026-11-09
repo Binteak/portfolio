@@ -1,39 +1,53 @@
 <script setup>
 const projects = [
- {
-  name: 'ARR. Personal Portfolio',
-  description:'You are here!. An interactive Mobile First developer portfolio showcasing projects, technology stacks, professional experience and an interactive CV, all in one place.',
-  technologies: ['Vue', 'Vite', 'JavaScript'],
-  link: '#',
-  github: 'https://github.com/Binteak/portfolio'
-}, 
-
-{
-  name: 'Banking Data Platform',
-  description:
-    'Web-based banking data WEB platform for managing data workflows, including data ingestion, housekeeping, data quality controls and interactive risk reporting.',
-  technologies: ['Angular', 'TypeScript', 'Python/Django', 'PostgreSQL'],
-  link: 'https://banking-data-platform-frontend.onrender.com/',
-  github: 'https://github.com/Binteak/bankingDataPlatform_frontend'
-},
-
-{
-  name: 'Defence Operations Platform',
-  description:
-    'Interactive defence operations WEB platform combining data-driven dashboards, geospatial visualization and operational monitoring in a modern web interface.',
-  technologies: ['Vue', 'Vuetify', 'Tailwind CSS', 'Leaflet', 'Chart.js'],
-  link: 'https://defense-application-frontend.onrender.com',
-  github: 'https://github.com/Binteak/defense-application-frontend'
-},
-
-{
-  name: 'InmobiliAI',
-  description:
-  'AI-powered real estate platform that extracts data from PDFs, identifies missing information, and pre-fills editable forms for human review before generating property listings for platforms such as Idealista. Currently under development. The GitHub repository includes sample PDF documents for testing.',
-  technologies: ['Angular', 'TypeScript', 'Python', 'FastAPI', 'LLMs'],
-  link: 'https://inmobiliai-frontend.onrender.com/',
-  github: 'https://github.com/Binteak/inmobiliAI_frontend'
-},
+  {
+    name: 'Rumbo · AI Travel Agent',
+    description:
+      'Agent that plans a complete trip (destination, weather, budget and itinerary) from a conversation. Hand-written agentic loop on the Claude API with tool use (no LangChain), Pydantic-typed tools and a cost-free demo mode. The Angular interface shows the agent reasoning live via Server-Sent Events; stateless backend with PostgreSQL and Redis, deployed with Docker, Kubernetes and GitHub Actions CI.',
+    technologies: ['Angular', 'Python', 'FastAPI', 'Claude API', 'PostgreSQL', 'Redis', 'Kubernetes'],
+    link: '#',
+    github: '#'
+  },
+  {
+    name: 'InmobiliAI',
+    description:
+      'Turns a real estate PDF into a reviewable listing draft: text extraction with PyMuPDF, field extraction to JSON with an LLM and an editable form that flags missing data instead of inventing it. The description is generated only from extracted facts. Includes a demo mode without API key.',
+    technologies: ['Angular', 'TypeScript', 'Python', 'FastAPI', 'LLMs', 'Docker'],
+    link: 'https://inmobiliai-frontend.onrender.com/',
+    github: 'https://github.com/Binteak/inmobiliAI_frontend'
+  },
+  {
+    name: 'Banking Data Platform',
+    description:
+      'Complete risk data workflow with simulated data: CSV ingestion, data quality controls, housekeeping, data exploration and metrics reporting. Three containers orchestrated with Docker Compose, environment-based configuration and backend and frontend tests.',
+    technologies: ['Angular', 'PrimeNG', 'Django REST', 'PostgreSQL', 'Docker'],
+    link: 'https://banking-data-platform-frontend.onrender.com/',
+    github: 'https://github.com/Binteak/bankingDataPlatform_frontend'
+  },
+  {
+    name: 'Defence Operations Platform',
+    description:
+      'Operations dashboard with an interactive Leaflet map where points move and the view updates automatically, combined with tracking charts in Chart.js.',
+    technologies: ['Vue', 'Vuetify', 'Tailwind CSS', 'Leaflet', 'Chart.js'],
+    link: 'https://defense-application-frontend.onrender.com',
+    github: 'https://github.com/Binteak/defense-application-frontend'
+  },
+  {
+    name: 'Internal Channel Bot',
+    description:
+      'Python automation bot for a real estate agency (in development). A Telegram bot connected to Google Drive, Sheets and Calendar that notifies about new files, daily appointments and team availability. Modular architecture, scheduled runs with GitHub Actions, simulator mode, tests and secrets kept out of the code.',
+    technologies: ['Python', 'Telegram', 'Google APIs', 'GitHub Actions'],
+    link: '#',
+    github: '#'
+  },
+  {
+    name: 'ARR. Personal Portfolio',
+    description:
+      'You are here! A mobile-first landing page that works as an interactive CV, showcasing my projects, professional experience and tech stack. Deployed on Render.',
+    technologies: ['Vue', 'Vite', 'JavaScript'],
+    link: '#',
+    github: 'https://github.com/Binteak/portfolio'
+  }
 ]
 </script>
 

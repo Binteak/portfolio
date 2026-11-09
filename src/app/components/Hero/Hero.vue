@@ -9,11 +9,11 @@ import profileImage from '../../../assets/images/profile.jpeg'
 defineEmits(['navigate'])
 
 const profileTags = [
-    '#TechLeadership',
   '#FullStack',
-  '#Data',
-  '#Automation',
-  '#ProblemSolving'
+  '#Angular',
+  '#Python',
+  '#AppliedAI',
+  '#TechLeadership'
 ]
 
 const currentTag = ref(0)
@@ -72,14 +72,14 @@ onUnmounted(() => {
  
 
       <h2>
-        Senior Full Stack Developer · Software Engineering · Data & Automation
+        Senior Full Stack Developer · Angular · Python · Applied AI
       </h2>
 
       <p class="hero-description">
-        I build and lead end-to-end technology solutions across
-  software engineering, data and automation, combining
-  hands-on development with technical leadership and
-  business-driven problem solving.
+        9 years in banking building products end to end, from the
+        business case to production. I combine hands-on development
+        and technical leadership, and I'm now applying LLMs and
+        AI agents to real products.
       </p>
 
       <!-- <div class="hero-actions">
