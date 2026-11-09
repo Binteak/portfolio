@@ -5,8 +5,8 @@ const projects = [
     description:
       'Agent that plans a complete trip (destination, weather, budget and itinerary) from a conversation. Hand-written agentic loop on the Claude API with tool use (no LangChain), Pydantic-typed tools and a cost-free demo mode. The Angular interface shows the agent reasoning live via Server-Sent Events; stateless backend with PostgreSQL and Redis, deployed with Docker, Kubernetes and GitHub Actions CI.',
     technologies: ['Angular', 'Python', 'FastAPI', 'Claude API', 'PostgreSQL', 'Redis', 'Kubernetes'],
-    link: '#',
-    github: '#'
+    link: 'https://rumbo-frontend.onrender.com',
+    github: 'https://github.com/Binteak/rumbo-ai'
   },
   {
     name: 'InmobiliAI',
