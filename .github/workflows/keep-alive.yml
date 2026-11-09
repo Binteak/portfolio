@@ -1,0 +1,26 @@
+# Mantiene despiertos los backends de Render (plan Free) durante el horario laboral.
+# Render duerme un servicio Free tras 15 min sin tráfico y reparte 750 h/mes entre
+# todos los servicios de la cuenta: tenerlos despiertos 24/7 agotaría las horas
+# y suspendería todos los servicios gratuitos hasta el mes siguiente.
+# Horario: lunes a viernes, 08:00-20:00 hora de Madrid (07:00-19:00 UTC en invierno).
+name: Keep Render backends awake
+
+on:
+  schedule:
+    - cron: "*/10 7-18 * * 1-5"
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Ping backends
+        run: |
+          for url in \
+            "https://rumbo-ai-fbwi.onrender.com/api/health" \
+            "https://inmobiliai-backend.onrender.com/health"
+          do
+            code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 90 --retry 2 --retry-delay 10 "$url" || true)
+            echo "$url -> $code"
+          done
