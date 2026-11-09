@@ -1,7 +1,7 @@
 # ARR. Portfolio
 
 Personal portfolio and interactive CV of **Álvaro Ruiz Ramírez**, Senior Full Stack Developer (Angular · Python) with 9 years in the banking sector, now applying LLMs and AI agents to real products.
-
+ 
 **Live:** https://portfolio-xq8b.onrender.com/
 
 ## What you'll find
