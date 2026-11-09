@@ -4,8 +4,6 @@ Personal portfolio and interactive CV of **Álvaro Ruiz Ramírez**, Senior Full 
 
 **Live:** https://portfolio-xq8b.onrender.com/
 
-https://github.com/user-attachments/assets/ed9ffd7b-bc97-4eb7-a91a-fa95420ddb60
-
 ## What you'll find
 
 | Section | Content |
