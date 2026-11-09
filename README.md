@@ -32,7 +32,6 @@ Personal portfolio and interactive CV of **Álvaro Ruiz Ramírez**, Senior Full 
 - **JavaScript**
 - **HTML5 / CSS3** with scoped styles per component
 - **Render** for hosting, with automatic deploys from `main`
-- **SonarQube** analysis via GitHub Actions
 
 ## Features
 
