@@ -1,47 +1,87 @@
-# Portfolio
+# ARR. Portfolio
 
-Personal portfolio website built with Vue.js to showcase my professional experience, projects, technical skills and background in software engineering, data and automation.
+Personal portfolio and interactive CV of **Álvaro Ruiz Ramírez**, Senior Full Stack Developer (Angular · Python) with 9 years in the banking sector, now applying LLMs and AI agents to real products.
+
+**Live:** https://portfolio-xq8b.onrender.com/
 
 https://github.com/user-attachments/assets/ed9ffd7b-bc97-4eb7-a91a-fa95420ddb60
 
+## What you'll find
 
+| Section | Content |
+|---|---|
+| **Hero** | Profile, current focus and quick links (GitHub, email) |
+| **About** | Who I am, what I do and main specialisations |
+| **Tech Stack** | Technologies grouped by area: frontend, backend, data, databases, DevOps, testing, applied AI and methodology |
+| **Experience** | Timeline at EY and Quental with client projects for BBVA, Banco Santander and Liberbank |
+| **Projects** | Personal projects with live demos and repositories |
+| **Contact** | Ways to get in touch |
 
+### Featured projects
 
-## About
+- **Rumbo · AI Travel Agent**: hand-written agentic loop on the Claude API with tool use, Angular + FastAPI, PostgreSQL, Redis, Kubernetes.
+- **InmobiliAI**: LLM-based data extraction from real estate PDFs into reviewable listing drafts. [Demo](https://inmobiliai-frontend.onrender.com/) · [Repo](https://github.com/Binteak/inmobiliAI_frontend)
+- **Banking Data Platform**: risk data workflow with quality controls and reporting. Angular, Django REST, PostgreSQL. [Demo](https://banking-data-platform-frontend.onrender.com/) · [Repo](https://github.com/Binteak/bankingDataPlatform_frontend)
+- **Defence Operations Platform**: geospatial operations dashboard with Leaflet and Chart.js. [Demo](https://defense-application-frontend.onrender.com) · [Repo](https://github.com/Binteak/defense-application-frontend)
+- **Internal Channel Bot**: Python Telegram bot integrated with Google Drive, Sheets and Calendar (in development).
 
-This portfolio brings together my professional experience and personal projects in a modern, responsive and interactive interface.
+> Demos are hosted on Render's free tier: the first load may take around 30–50 seconds while the service wakes up.
 
-It is designed to showcase both my technical background and the different solutions I have developed throughout my career.
+## Tech stack
 
-## Technologies
-
-- Vue.js
-- JavaScript
-- HTML5
-- CSS3
-- Vite
+- **Vue 3** (Composition API, `<script setup>`)
+- **Vite**
+- **JavaScript**
+- **HTML5 / CSS3** with scoped styles per component
+- **Render** for hosting, with automatic deploys from `main`
+- **SonarQube** analysis via GitHub Actions
 
 ## Features
 
-- Responsive design
-- Professional experience timeline
-- Project showcase
-- Technical skills and technologies
-- Interactive navigation
-- Mobile-first experience
-- Social and contact links
+- Mobile-first, fully responsive design
+- Single-page navigation between sections
+- Experience timeline with client projects and technologies
+- Project cards with live demo and repository links
+- Lightweight: no UI framework, no router, content kept as plain data in each view
 
-## Live Demo
+## Project structure
 
-https://portfolio-xq8b.onrender.com/
+```
+src/
+├── App.vue                  # Layout and section navigation
+├── main.js
+├── style.css                # Global styles and fonts
+├── assets/                  # Profile image, icons and company logos
+└── app/
+    ├── components/
+    │   ├── Hero/
+    │   └── Navbar/
+    └── views/
+        ├── About/
+        ├── TechStack/
+        ├── Experience/
+        ├── Projects/
+        └── Contact/
+```
 
-## Project Structure
+Each section lives in its own folder with a `.vue` file and its `.css`. Content (experience, projects, technologies) is defined as arrays at the top of each view, so updating the CV only means editing data, not markup.
 
-The project is built as a Vue.js single-page application using reusable components for each section of the portfolio.
+## Run locally
+
+Requires Node.js `^22.18.0` or `>=24.12.0`.
+
+```bash
+npm install
+npm run dev       # http://localhost:5173
+npm run build     # production build in dist/
+npm run preview   # serve the production build
+```
 
 ## Author
 
 **Álvaro Ruiz Ramírez**
+Senior Full Stack Developer · Angular · Python · Applied AI
 
-Senior Full Stack Developer · Software Engineering · Data & Automation
-
+- LinkedIn: [linkedin.com/in/alvaroruizramirez](https://www.linkedin.com/in/alvaroruizramirez)
+- GitHub: [github.com/Binteak](https://github.com/Binteak)
+- Email: alruizra93@gmail.com
