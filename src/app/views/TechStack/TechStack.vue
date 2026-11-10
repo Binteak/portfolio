@@ -24,6 +24,8 @@ const technologiesEs = {
   'Vector Search (pgvector)': 'Búsqueda vectorial (pgvector)',
   'Chunking & Ingestion': 'Chunking e ingesta',
   'Retrieval Evals (recall@k, MRR)': 'Evals de recuperación (recall@k, MRR)',
+  'LLM Observability': 'Observabilidad de LLMs',
+  'AI-Assisted Development': 'Desarrollo asistido por IA',
   'Mentoring': 'Mentoría'
 }
 
@@ -157,6 +159,8 @@ const technologyGroups = [
       'Chunking & Ingestion',
       'Retrieval Evals (recall@k, MRR)',
       'Document Data Extraction',
+      'LLM Observability',
+      'AI-Assisted Development',
       'GitHub Copilot',
       'Claude Code'
     ]

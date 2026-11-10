@@ -12,14 +12,14 @@ const content = {
     status: 'Available for new opportunities',
     subtitle: 'Senior Full Stack Developer · Angular · Python · Applied AI',
     description:
-      "9 years in banking building products end to end, from the business case to production. I combine hands-on development and technical leadership, and I'm now applying LLMs and AI agents to real products.",
+      "9 years in banking building products end to end, from the business case to production. I combine hands-on development and technical leadership, and I now work independently on generative AI: AI agents with tool calling, RAG and LLMs, taken all the way to production.",
     more: 'More About me'
   },
   es: {
     status: 'Disponible para nuevas oportunidades',
     subtitle: 'Senior Full Stack Developer · Angular · Python · IA aplicada',
     description:
-      'Nueve años en banca construyendo productos de principio a fin, del caso de negocio a producción. Combino desarrollo y liderazgo técnico, y ahora aplico LLMs y agentes de IA a productos reales.',
+      'Nueve años en banca construyendo productos de principio a fin, del caso de negocio a producción. Combino desarrollo y liderazgo técnico, y ahora me dedico por mi cuenta a la IA generativa: agentes con tool calling, RAG y LLMs llevados hasta producción.',
     more: 'Más sobre mí'
   }
 }
@@ -33,6 +33,7 @@ const profileTags = [
   '#Angular',
   '#Python',
   '#AppliedAI',
+  '#RAG',
   '#TechLeadership'
 ]
 
