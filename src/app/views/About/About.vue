@@ -14,7 +14,7 @@ const content = {
       "A Full Stack Developer (Angular · Python) who combines hands-on engineering with technical leadership. I've worked as Tech Lead and Team Lead, dealing directly with clients, and I enjoy turning complex requirements into reliable software.",
     whatTitle: 'What I do',
     what:
-      "I design and build complete solutions: data, APIs, interfaces and deployment. Lately I've been applying LLMs in my own projects, such as an agent built on the Claude API and a document extraction tool, both containerised and deployed with CI/CD.",
+      "I design and build complete solutions: data, APIs, interfaces and deployment. Lately I've been applying LLMs in my own projects, such as an AI agent with tool use and RAG over its own knowledge base (Claude or Gemini) and a document extraction tool, both containerised and deployed with CI/CD.",
     specialized: 'SPECIALIZED IN',
     specializations: [
       { icon: '</>', title: 'Full Stack', text: 'Angular, Vue, TypeScript, Python, FastAPI & Django' },
@@ -39,7 +39,7 @@ const content = {
       'Un Full Stack Developer (Angular · Python) que combina el desarrollo con el liderazgo técnico. He sido Tech Lead y Team Lead, con trato directo con cliente, y disfruto convirtiendo requisitos complejos en software fiable.',
     whatTitle: 'Qué hago',
     what:
-      'Diseño y construyo soluciones completas: datos, APIs, interfaces y despliegue. Últimamente aplico LLMs en proyectos propios, como un agente sobre la API de Claude y una herramienta de extracción de documentos, ambos en contenedores y desplegados con CI/CD.',
+      'Diseño y construyo soluciones completas: datos, APIs, interfaces y despliegue. Últimamente aplico LLMs en proyectos propios, como un agente de IA con tool use y RAG sobre una base de conocimiento propia (Claude o Gemini) y una herramienta de extracción de documentos, ambos en contenedores y desplegados con CI/CD.',
     specialized: 'ESPECIALIZADO EN',
     specializations: [
       { icon: '</>', title: 'Full Stack', text: 'Angular, Vue, TypeScript, Python, FastAPI y Django' },

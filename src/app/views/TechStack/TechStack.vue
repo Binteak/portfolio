@@ -19,6 +19,11 @@ const technologiesEs = {
   'Unit Testing': 'Testing unitario',
   'SOLID Principles': 'Principios SOLID',
   'Document Data Extraction': 'Extracción de datos de documentos',
+  'AI Agents & Agentic Loop': 'Agentes de IA y bucle agéntico',
+  'Hybrid Search (BM25 + Embeddings)': 'Búsqueda híbrida (BM25 + embeddings)',
+  'Vector Search (pgvector)': 'Búsqueda vectorial (pgvector)',
+  'Chunking & Ingestion': 'Chunking e ingesta',
+  'Retrieval Evals (recall@k, MRR)': 'Evals de recuperación (recall@k, MRR)',
   'Mentoring': 'Mentoría'
 }
 
@@ -104,6 +109,7 @@ const technologyGroups = [
     title: 'Databases',
     technologies: [
       'PostgreSQL',
+      'pgvector',
       'Oracle',
       'MySQL',
       'Redis',
@@ -142,8 +148,14 @@ const technologyGroups = [
   {
     title: 'Applied AI',
     technologies: [
-      'LLM APIs (Claude, OpenAI)',
+      'LLM APIs (Claude, Gemini, OpenAI)',
+      'AI Agents & Agentic Loop',
       'Tool Use / Function Calling',
+      'RAG (Retrieval-Augmented Generation)',
+      'Hybrid Search (BM25 + Embeddings)',
+      'Vector Search (pgvector)',
+      'Chunking & Ingestion',
+      'Retrieval Evals (recall@k, MRR)',
       'Document Data Extraction',
       'GitHub Copilot',
       'Claude Code'
