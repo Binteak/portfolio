@@ -11,10 +11,10 @@ const content = {
       'Senior Full Stack Developer with 9 years in the banking sector, building products end to end, from the business case to production. With a degree in Statistics and Business, I started as a Data Scientist and spent 8 years at EY working for BBVA, Banco Santander and Liberbank: Angular and Vue applications with Python backends, data pipelines on AWS and deployments on OpenShift with CI/CD.',
     whoTitle: 'Who I am',
     who:
-      "A Full Stack Developer (Angular · Python) who combines hands-on engineering with technical leadership. I've worked as Tech Lead and Team Lead, dealing directly with clients, and I enjoy turning complex requirements into reliable software.",
+      "A Full Stack Developer (Angular · Python) who combines hands-on engineering with technical leadership. I've worked as Tech Lead and Team Lead, dealing directly with clients, and I enjoy turning complex requirements into reliable software. I'm self-taught by nature: I started with data and added frontend, backend and DevOps along the way, project by project.",
     whatTitle: 'What I do',
     what:
-      "I design and build complete solutions: data, APIs, interfaces and deployment. Lately I've been applying LLMs in my own projects, such as an AI agent with tool use and RAG over its own knowledge base (Claude or Gemini) and a document extraction tool, both containerised and deployed with CI/CD.",
+      "I design and build complete solutions: data, APIs, interfaces and deployment. I now work independently on generative AI, from two sides: I use it every day to develop, with Claude as an assistant, which lets me move much faster without losing control of the code; and I build applications that are agents in their own right, with tool calling, RAG and LLMs, a FastAPI backend, an Angular frontend and traceability of everything the model does, deployed on Render with GitHub Actions.",
     specialized: 'SPECIALIZED IN',
     specializations: [
       { icon: '</>', title: 'Full Stack', text: 'Angular, Vue, TypeScript, Python, FastAPI & Django' },
@@ -36,10 +36,10 @@ const content = {
       'Senior Full Stack Developer con 9 años en el sector bancario, construyendo productos de principio a fin, del caso de negocio a producción. Graduado en Estadística y Empresa, empecé como Data Scientist y he pasado 8 años en EY trabajando para BBVA, Banco Santander y Liberbank: aplicaciones Angular y Vue con backends en Python, pipelines de datos en AWS y despliegues en OpenShift con CI/CD.',
     whoTitle: 'Quién soy',
     who:
-      'Un Full Stack Developer (Angular · Python) que combina el desarrollo con el liderazgo técnico. He sido Tech Lead y Team Lead, con trato directo con cliente, y disfruto convirtiendo requisitos complejos en software fiable.',
+      'Un Full Stack Developer (Angular · Python) que combina el desarrollo con el liderazgo técnico. He sido Tech Lead y Team Lead, con trato directo con cliente, y disfruto convirtiendo requisitos complejos en software fiable. Soy muy autodidacta: empecé con datos y fui sumando frontend, backend y DevOps sobre la marcha, proyecto a proyecto.',
     whatTitle: 'Qué hago',
     what:
-      'Diseño y construyo soluciones completas: datos, APIs, interfaces y despliegue. Últimamente aplico LLMs en proyectos propios, como un agente de IA con tool use y RAG sobre una base de conocimiento propia (Claude o Gemini) y una herramienta de extracción de documentos, ambos en contenedores y desplegados con CI/CD.',
+      'Diseño y construyo soluciones completas: datos, APIs, interfaces y despliegue. Ahora me dedico por mi cuenta a la IA generativa, por dos lados: la uso en mi día a día para desarrollar, con Claude como asistente, lo que me permite ir mucho más rápido sin perder el control del código; y construyo aplicaciones que son agentes en sí mismas, con tool calling, RAG y LLMs, un backend en FastAPI, un frontend en Angular y trazabilidad de todo lo que hace el modelo, desplegadas en Render con GitHub Actions.',
     specialized: 'ESPECIALIZADO EN',
     specializations: [
       { icon: '</>', title: 'Full Stack', text: 'Angular, Vue, TypeScript, Python, FastAPI y Django' },
