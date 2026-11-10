@@ -6,10 +6,10 @@ const projectList = [
   {
     name: { en: 'Rumbo · AI Travel Agent', es: 'Rumbo · Agente de viajes con IA' },
     description: {
-      en: 'Agent that plans a complete trip (destination, weather, budget and itinerary) from a conversation. Hand-written agentic loop on the Claude API with tool use (no LangChain), Pydantic-typed tools and a cost-free demo mode. The Angular interface shows the agent reasoning live via Server-Sent Events; stateless backend with PostgreSQL and Redis, deployed with Docker, Kubernetes and GitHub Actions CI.',
-      es: 'Agente que planifica un viaje completo (destino, clima, presupuesto e itinerario) a partir de una conversación. Bucle agéntico escrito a mano sobre la API de Claude con tool use (sin LangChain), herramientas tipadas con Pydantic y un modo demo sin coste. La interfaz en Angular muestra el razonamiento del agente en directo con Server-Sent Events; backend sin estado con PostgreSQL y Redis, desplegado con Docker, Kubernetes y CI en GitHub Actions.'
+      en: 'Agent that plans a complete trip (destination, weather, budget and itinerary) from a conversation and answers practical questions (visas, transport, tipping) citing its sources. Hand-written agentic loop with tool use (no LangChain) on Claude or Gemini, with a cost-free demo mode. Hybrid RAG over its own Markdown guides (BM25 + embeddings, Reciprocal Rank Fusion, pgvector) with retrieval evals in CI. Live agent trace in Angular via Server-Sent Events; stateless FastAPI backend with PostgreSQL and Redis on Docker and Kubernetes.',
+      es: 'Agente que planifica un viaje completo (destino, clima, presupuesto e itinerario) a partir de una conversación y resuelve dudas prácticas (visados, transporte, propinas) citando la fuente. Bucle agéntico escrito a mano con tool use (sin LangChain) sobre Claude o Gemini, con modo demo sin coste. RAG híbrido sobre guías propias en Markdown (BM25 + embeddings, Reciprocal Rank Fusion, pgvector) con evals de recuperación en la CI. Traza del agente en directo en Angular con Server-Sent Events; backend FastAPI sin estado con PostgreSQL y Redis sobre Docker y Kubernetes.'
     },
-    technologies: ['Angular', 'Python', 'FastAPI', 'Claude API', 'PostgreSQL', 'Redis', 'Kubernetes'],
+    technologies: ['Angular', 'Python', 'FastAPI', 'Claude & Gemini', 'RAG', 'pgvector', 'Redis', 'Kubernetes'],
     link: 'https://rumbo-frontend.onrender.com',
     github: 'https://github.com/Binteak/rumbo-ai'
   },
