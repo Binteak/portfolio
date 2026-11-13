@@ -19,7 +19,7 @@ Personal portfolio and interactive CV of **Álvaro Ruiz Ramírez**, Senior Full 
 
 - **Rumbo · AI Travel Agent**: hand-written agentic loop with tool use (Claude or Gemini) and hybrid RAG over its own Markdown guides (BM25 + embeddings, RRF, pgvector, retrieval evals in CI). Angular + FastAPI, PostgreSQL, Redis, Kubernetes. [Demo](https://rumbo-frontend.onrender.com) · [Repo](https://github.com/Binteak/rumbo-ai)
 - **InmobiliAI**: LLM-based data extraction from real estate PDFs into reviewable listing drafts. [Demo](https://inmobiliai-frontend.onrender.com/) · [Repo](https://github.com/Binteak/inmobiliAI_frontend)
-- **Banking Data Platform**: risk data workflow with quality controls and reporting. Angular, Django REST, PostgreSQL. [Demo](https://banking-data-platform-frontend.onrender.com/) · [Repo](https://github.com/Binteak/bankingDataPlatform_frontend)
+- **Banking Data Platform**: risk data workflow with quality controls and reporting. Angular, Django REST, PostgreSQL. [Demo](https://banking-data-platform.onrender.com/) · [Repo](https://github.com/Binteak/banking-data-platform)
 - **Defence Operations Platform**: geospatial operations dashboard with Leaflet and Chart.js. [Demo](https://defense-application-frontend.onrender.com) · [Repo](https://github.com/Binteak/defense-application-frontend)
 - **Internal Channel Bot**: Python Telegram bot integrated with Google Drive, Sheets and Calendar (in development).
 
