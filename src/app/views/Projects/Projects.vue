@@ -30,8 +30,8 @@ const projectList = [
       es: 'Flujo completo de datos de riesgo con datos simulados: carga de CSV, controles de calidad del dato, housekeeping, exploración y reporting de métricas. Tres contenedores orquestados con Docker Compose, configuración por variables de entorno y tests de backend y frontend.'
     },
     technologies: ['Angular', 'PrimeNG', 'Django REST', 'PostgreSQL', 'Docker'],
-    link: 'https://banking-data-platform-frontend.onrender.com/',
-    github: 'https://github.com/Binteak/bankingDataPlatform_frontend'
+    link: 'https://banking-data-platform.onrender.com/',
+    github: 'https://github.com/Binteak/banking-data-platform'
   },
   {
     name: { en: 'Defence Operations Platform', es: 'Defence Operations Platform' },
