@@ -23,7 +23,7 @@
 .section-label {
   margin-bottom: 24px;
 
-  color: #a78bfa;
+  color: #e3c48d;
 
   font-size: 11px;
   font-weight: 600;
@@ -48,7 +48,7 @@
 }
 
 .tech-container h1 span {
-  color: #8b5cf6;
+  color: #d9b26f;
 }
 
 
@@ -61,7 +61,7 @@
 
   margin-top: 30px;
 
-  color: #8f8f9d;
+  color: #a3adbd;
 
   font-size: 16px;
   line-height: 1.7;
@@ -91,7 +91,7 @@
 
   margin-bottom: 14px;
 
-  color: #a1a1aa;
+  color: #b4bdcb;
 
   font-size: 11px;
   font-weight: 600;
@@ -106,10 +106,10 @@
 
   border-radius: 50%;
 
-  background: #8b5cf6;
+  background: #d9b26f;
 
   box-shadow:
-    0 0 10px rgba(139, 92, 246, 0.7);
+    0 0 10px rgba(217, 178, 111, 0.7);
 }
 
 
@@ -146,7 +146,7 @@
 
   background: rgba(255, 255, 255, 0.025);
 
-  color: #d4d4d8;
+  color: #d3d9e2;
 
   font-size: 13px;
 
@@ -165,7 +165,7 @@
 
   border-radius: 50%;
 
-  background: #71717a;
+  background: #8792a5;
 
   transition:
     background 0.25s ease,
@@ -175,19 +175,19 @@
 .tech-card:hover {
   transform: translateY(-3px);
 
-  background: rgba(139, 92, 246, 0.07);
+  background: rgba(217, 178, 111, 0.07);
 
-  border-color: rgba(139, 92, 246, 0.3);
+  border-color: rgba(217, 178, 111, 0.3);
 
   box-shadow:
-    0 10px 30px rgba(139, 92, 246, 0.08);
+    0 10px 30px rgba(217, 178, 111, 0.08);
 }
 
 .tech-card:hover .tech-indicator {
-  background: #a78bfa;
+  background: #e3c48d;
 
   box-shadow:
-    0 0 8px rgba(139, 92, 246, 0.8);
+    0 0 8px rgba(217, 178, 111, 0.8);
 }
 
 
@@ -246,7 +246,7 @@
   padding: 120px 24px 100px;
 
   scrollbar-width: thin;
-  scrollbar-color: rgba(139, 92, 246, 0.5) transparent;
+  scrollbar-color: rgba(217, 178, 111, 0.5) transparent;
 }
 
 /* =========================
@@ -262,12 +262,12 @@
 }
 
 .tech-page::-webkit-scrollbar-thumb {
-  background: rgba(139, 92, 246, 0.35);
+  background: rgba(217, 178, 111, 0.35);
   border-radius: 10px;
 }
 
 .tech-page::-webkit-scrollbar-thumb:hover {
-  background: rgba(139, 92, 246, 0.7);
+  background: rgba(217, 178, 111, 0.7);
 }
 
 

@@ -47,10 +47,6 @@ const previousPage = () => {
 <template>
   <div class="app">
 
-    <!-- Background -->
-    <div class="background-glow background-glow-one"></div>
-    <div class="background-glow background-glow-two"></div>
-    <div class="grid"></div>
 
     <!-- Navbar -->
     <!-- <Navbar @navigate="changePage" /> -->
@@ -130,7 +126,7 @@ const previousPage = () => {
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 100px;
 
-  background: rgba(7, 7, 10, 0.65);
+  background: rgba(15, 27, 45, 0.65);
 
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
@@ -145,7 +141,7 @@ const previousPage = () => {
   border: none;
   border-radius: 50%;
 
-  background: rgba(167, 139, 250, 0.35);
+  background: rgba(227, 196, 141, 0.35);
 
   cursor: pointer;
 
@@ -157,7 +153,7 @@ const previousPage = () => {
 }
 
 .page-dot:hover {
-  background: rgba(167, 139, 250, 0.7);
+  background: rgba(227, 196, 141, 0.7);
 
   transform: scale(1.2);
 }
@@ -166,11 +162,11 @@ const previousPage = () => {
   width: 9px;
   height: 9px;
 
-  background: #8b5cf6;
+  background: #d9b26f;
 
   box-shadow:
-    0 0 10px rgba(139, 92, 246, 0.8),
-    0 0 20px rgba(139, 92, 246, 0.35);
+    0 0 10px rgba(217, 178, 111, 0.8),
+    0 0 20px rgba(217, 178, 111, 0.35);
 }
 
 @media (max-width: 500px) {

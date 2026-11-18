@@ -152,6 +152,7 @@ const technologyGroups = [
     technologies: [
       'LLM APIs (Claude, Gemini, OpenAI)',
       'AI Agents & Agentic Loop',
+      'LangChain',
       'Tool Use / Function Calling',
       'RAG (Retrieval-Augmented Generation)',
       'Hybrid Search (BM25 + Embeddings)',

@@ -17,8 +17,8 @@ const experienceList = [
     logo: null,
     projects: [],
     description: {
-      en: 'Looking for the next challenge: a Full Stack role (Angular · Python) where I can also apply LLMs and AI agents to real products.',
-      es: 'Busco el siguiente reto: un puesto Full Stack (Angular · Python) en el que también pueda aplicar LLMs y agentes de IA a productos reales.'
+      en: 'Looking for my next challenge as a Full Stack, backend or frontend developer, in a team where I can bring my experience in Angular, Python and data, and applied AI too when it fits.',
+      es: 'Busco mi siguiente reto como desarrollador Full Stack, backend o frontend, en un equipo donde aportar mi experiencia en Angular, Python y datos, y si encaja, también en IA aplicada.'
     }
   },
   {

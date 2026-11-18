@@ -4,14 +4,26 @@ import { lang } from '../../../i18n'
 
 const projectList = [
   {
-    name: { en: 'Rumbo · AI Travel Agent', es: 'Rumbo · Agente de viajes con IA' },
+    name: { en: 'Rumbo · AI Travel Agent', es: 'Rumbo · Viajes con IA' },
     description: {
-      en: 'Agent that plans a complete trip (destination, weather, budget and itinerary) from a conversation and answers practical questions (visas, transport, tipping) citing its sources. Hand-written agentic loop with tool use (no LangChain) on Claude or Gemini, with a cost-free demo mode. Hybrid RAG over its own Markdown guides (BM25 + embeddings, Reciprocal Rank Fusion, pgvector) with retrieval evals in CI. Live agent trace in Angular via Server-Sent Events; stateless FastAPI backend with PostgreSQL and Redis on Docker and Kubernetes.',
-      es: 'Agente que planifica un viaje completo (destino, clima, presupuesto e itinerario) a partir de una conversación y resuelve dudas prácticas (visados, transporte, propinas) citando la fuente. Bucle agéntico escrito a mano con tool use (sin LangChain) sobre Claude o Gemini, con modo demo sin coste. RAG híbrido sobre guías propias en Markdown (BM25 + embeddings, Reciprocal Rank Fusion, pgvector) con evals de recuperación en la CI. Traza del agente en directo en Angular con Server-Sent Events; backend FastAPI sin estado con PostgreSQL y Redis sobre Docker y Kubernetes.'
+      en: 'Agent that plans a complete trip (destination, weather, budget and itinerary) from a conversation and cites its sources. Built with LangChain and Pydantic-typed tools, it chains several LLMs (when one runs out of quota, the next one takes over), uses hybrid RAG on pgvector and shows a live agent trace in Angular.',
+      es: 'Agente que planifica un viaje completo (destino, clima, presupuesto e itinerario) a partir de una conversación y cita sus fuentes. Construido con LangChain y herramientas tipadas con Pydantic, encadena varios modelos de LLM (si uno agota su cuota, entra el siguiente), usa RAG híbrido en pgvector y muestra la traza del agente en directo en Angular.'
     },
-    technologies: ['Angular', 'Python', 'FastAPI', 'Claude & Gemini', 'RAG', 'pgvector', 'Redis', 'Kubernetes'],
+    technologies: ['Angular', 'Python', 'FastAPI', 'LLM', 'LangChain', 'Pydantic', 'RAG', 'pgvector', 'Redis'],
     link: 'https://rumbo-frontend.onrender.com',
-    github: 'https://github.com/Binteak/rumbo-ai'
+    github: 'https://github.com/Binteak/rumbo-ai',
+    media: 'proyectos/rumbo.gif'
+  },
+  {
+    name: { en: 'Banking Data Platform', es: 'Banking Data Platform' },
+    description: {
+      en: 'Complete risk data workflow with simulated data: CSV ingestion, data quality controls, housekeeping, data exploration and metrics reporting. Login with JWT and Microsoft Entra ID with roles, and CI on GitHub Actions with SonarQube free of issues and 86% backend coverage.',
+      es: 'Flujo completo de datos de riesgo con datos simulados: carga de CSV, controles de calidad del dato, housekeeping, exploración y reporting de métricas. Login con JWT y Microsoft Entra ID con roles, y CI en GitHub Actions con SonarQube sin incidencias y un 86 % de cobertura en backend.'
+    },
+    technologies: ['Angular', 'PrimeNG', 'Django REST', 'PostgreSQL', 'Docker', 'Entra ID', 'SonarQube'],
+    link: 'https://banking-data-platform.onrender.com/',
+    github: 'https://github.com/Binteak/banking-data-platform',
+    media: 'proyectos/banking-data-platform.gif'
   },
   {
     name: { en: 'InmobiliAI', es: 'InmobiliAI' },
@@ -21,17 +33,8 @@ const projectList = [
     },
     technologies: ['Angular', 'TypeScript', 'Python', 'FastAPI', 'LLMs', 'Docker'],
     link: 'https://inmobiliai-frontend.onrender.com/',
-    github: 'https://github.com/Binteak/inmobiliAI_frontend'
-  },
-  {
-    name: { en: 'Banking Data Platform', es: 'Banking Data Platform' },
-    description: {
-      en: 'Complete risk data workflow with simulated data: CSV ingestion, data quality controls, housekeeping, data exploration and metrics reporting. Three containers orchestrated with Docker Compose, environment-based configuration and backend and frontend tests.',
-      es: 'Flujo completo de datos de riesgo con datos simulados: carga de CSV, controles de calidad del dato, housekeeping, exploración y reporting de métricas. Tres contenedores orquestados con Docker Compose, configuración por variables de entorno y tests de backend y frontend.'
-    },
-    technologies: ['Angular', 'PrimeNG', 'Django REST', 'PostgreSQL', 'Docker'],
-    link: 'https://banking-data-platform.onrender.com/',
-    github: 'https://github.com/Binteak/banking-data-platform'
+    github: 'https://github.com/Binteak/inmobiliAI_frontend',
+    media: 'proyectos/inmobiliai.gif'
   },
   {
     name: { en: 'Defence Operations Platform', es: 'Defence Operations Platform' },
@@ -71,6 +74,7 @@ const content = {
     title: "Things I've",
     highlight: 'built.',
     demo: 'View Demo',
+    capture: 'Screen recording of',
     github: 'View GitHub repository',
     githubTitle: 'GitHub repository',
     moreTitle: 'More projects',
@@ -83,6 +87,7 @@ const content = {
     title: 'Cosas que he',
     highlight: 'construido.',
     demo: 'Ver demo',
+    capture: 'Grabación de pantalla de',
     github: 'Ver repositorio en GitHub',
     githubTitle: 'Repositorio en GitHub',
     moreTitle: 'Más proyectos',
@@ -93,6 +98,9 @@ const content = {
 }
 
 const c = computed(() => content[lang.value])
+
+// Los GIFs viven en public/proyectos; BASE_URL respeta el 'base' de Vite
+const baseUrl = import.meta.env.BASE_URL
 
 const projects = computed(() =>
   projectList.map((project) => ({
@@ -127,6 +135,22 @@ const projects = computed(() =>
           class="project-card"
         >
 
+          <!-- GRABACIÓN DE LA APLICACIÓN -->
+          <a
+            v-if="project.media"
+            class="project-media"
+            :href="project.link && project.link !== '#' ? project.link : project.github"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              :src="baseUrl + project.media"
+              :alt="`${c.capture} ${project.name}`"
+              loading="lazy"
+              decoding="async"
+            />
+          </a>
+
           <div class="project-top">
 
             <div class="project-number">
@@ -143,7 +167,6 @@ const projects = computed(() =>
     rel="noopener noreferrer"
     class="project-action demo-action"
   >
-    <i class="pi pi-external-link"></i>
     <span>{{ c.demo }}</span>
   </a>
 

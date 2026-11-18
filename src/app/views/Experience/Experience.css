@@ -13,7 +13,7 @@
   box-sizing: border-box;
 
   scrollbar-width: thin;
-  scrollbar-color: rgba(139, 92, 246, 0.5) transparent;
+  scrollbar-color: rgba(217, 178, 111, 0.5) transparent;
 }
 
 
@@ -30,12 +30,12 @@
 }
 
 .experience-page::-webkit-scrollbar-thumb {
-  background: rgba(139, 92, 246, 0.35);
+  background: rgba(217, 178, 111, 0.35);
   border-radius: 10px;
 }
 
 .experience-page::-webkit-scrollbar-thumb:hover {
-  background: rgba(139, 92, 246, 0.7);
+  background: rgba(217, 178, 111, 0.7);
 }
 
 
@@ -56,7 +56,7 @@
 .section-label {
   margin-bottom: 24px;
 
-  color: #a78bfa;
+  color: #e3c48d;
 
   font-size: 11px;
   font-weight: 600;
@@ -83,7 +83,7 @@
 }
 
 .experience-container h1 span {
-  color: #8b5cf6;
+  color: #d9b26f;
 }
 
 
@@ -96,7 +96,7 @@
 
   margin: 30px 0 0;
 
-  color: #8f8f9d;
+  color: #a3adbd;
 
   font-size: 16px;
   line-height: 1.7;
@@ -136,7 +136,7 @@
 ========================================================= */
 
 .experience-period {
-  color: #71717a;
+  color: #8792a5;
 
   font-size: 12px;
 
@@ -168,7 +168,7 @@
 .experience-company {
   margin-top: 6px;
 
-  color: #a78bfa;
+  color: #e3c48d;
 
   font-size: 13px;
   font-weight: 500;
@@ -179,7 +179,7 @@
 
   margin: 15px 0 0;
 
-  color: #8f8f9d;
+  color: #a3adbd;
 
   font-size: 14px;
   line-height: 1.7;
@@ -239,10 +239,10 @@
 }
 
 .company-header:hover .company-logo {
-  border-color: rgba(139, 92, 246, 0.4);
+  border-color: rgba(217, 178, 111, 0.4);
 
   box-shadow:
-    0 0 20px rgba(139, 92, 246, 0.12);
+    0 0 20px rgba(217, 178, 111, 0.12);
 }
 
 
@@ -251,14 +251,14 @@
 ========================================================= */
 
 .future-heart {
-  color: #8b5cf6;
+  color: #d9b26f;
 
   font-size: 21px;
   line-height: 1;
 
   text-shadow:
-    0 0 10px rgba(139, 92, 246, 0.55),
-    0 0 20px rgba(139, 92, 246, 0.2);
+    0 0 10px rgba(217, 178, 111, 0.55),
+    0 0 20px rgba(217, 178, 111, 0.2);
 }
 
 
@@ -300,9 +300,9 @@
 .project:hover {
   transform: translateY(-2px);
 
-  border-color: rgba(139, 92, 246, 0.3);
+  border-color: rgba(217, 178, 111, 0.3);
 
-  background: rgba(139, 92, 246, 0.04);
+  background: rgba(217, 178, 111, 0.04);
 }
 
 
@@ -334,7 +334,7 @@
 }
 
 .project-client {
-  color: #d4d4d8;
+  color: #d3d9e2;
 
   font-size: 14px;
   font-weight: 600;
@@ -377,17 +377,17 @@
 ========================================================= */
 
 .project-title {
-  color: #a78bfa;
+  color: #e3c48d;
 
   font-size: 12px;
 
   padding: 4px 8px;
 
-  border: 1px solid rgba(139, 92, 246, 0.2);
+  border: 1px solid rgba(217, 178, 111, 0.2);
 
   border-radius: 5px;
 
-  background: rgba(139, 92, 246, 0.06);
+  background: rgba(217, 178, 111, 0.06);
 }
 
 
@@ -400,7 +400,7 @@
 
   margin: 12px 0 0;
 
-  color: #8f8f9d;
+  color: #a3adbd;
 
   font-size: 13px;
   line-height: 1.7;
@@ -427,7 +427,7 @@
 
   border-radius: 5px;
 
-  color: #71717a;
+  color: #8792a5;
 
   font-size: 10px;
 

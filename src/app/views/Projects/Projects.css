@@ -12,7 +12,7 @@
 .section-label {
   margin-bottom: 24px;
 
-  color: #a78bfa;
+  color: #e3c48d;
 
   font-size: 11px;
   font-weight: 600;
@@ -28,7 +28,7 @@
 }
 
 .projects-container h1 span {
-  color: #8b5cf6;
+  color: #d9b26f;
 }
 
 
@@ -79,12 +79,12 @@
 .project-card:hover {
   transform: translateY(-6px);
 
-  border-color: rgba(139, 92, 246, 0.4);
+  border-color: rgba(217, 178, 111, 0.4);
 
   background:
     linear-gradient(
       145deg,
-      rgba(139, 92, 246, 0.055),
+      rgba(217, 178, 111, 0.055),
       rgba(255, 255, 255, 0.02)
     );
 }
@@ -117,7 +117,7 @@
 
   height: 30px;
 
-  padding: 0 10px;
+  padding: 0 12px;
 
   border-radius: 7px;
 
@@ -146,23 +146,23 @@
 .demo-action {
   color: #ffffff;
 
-  border: 1px solid rgba(139, 92, 246, 0.35);
+  border: 1px solid rgba(217, 178, 111, 0.35);
 
-  background: rgba(139, 92, 246, 0.10);
+  background: rgba(217, 178, 111, 0.10);
 }
 
 .demo-action:hover {
   color: #ffffff;
 
-  border-color: rgba(167, 139, 250, 0.7);
+  border-color: rgba(227, 196, 141, 0.7);
 
-  background: rgba(139, 92, 246, 0.22);
+  background: rgba(217, 178, 111, 0.22);
 
   transform: translateY(-1px);
 }
 
 .demo-action i {
-  color: #a78bfa;
+  color: #e3c48d;
 }
 
 
@@ -223,7 +223,7 @@
 }
 
 .project-number {
-  color: #52525b;
+  color: #6b7890;
 
   font-family: monospace;
   font-size: 12px;
@@ -246,7 +246,7 @@
 }
 
 .project-link:hover {
-  color: #a78bfa;
+  color: #e3c48d;
 
   opacity: 1;
 
@@ -276,7 +276,7 @@
 .project-card p {
   margin: 14px 0 0;
 
-  color: #8f8f9d;
+  color: #a3adbd;
 
   font-size: 13px;
   line-height: 1.7;
@@ -300,12 +300,12 @@
 .project-tech {
   padding: 5px 8px;
 
-  border: 1px solid rgba(167, 139, 250, 0.2);
+  border: 1px solid rgba(227, 196, 141, 0.2);
   border-radius: 6px;
 
-  background: rgba(139, 92, 246, 0.06);
+  background: rgba(217, 178, 111, 0.06);
 
-  color: #a78bfa;
+  color: #e3c48d;
 
   font-size: 10px;
   line-height: 1;
@@ -384,12 +384,12 @@
 .project-coming-soon {
   overflow: hidden;
 
-  border-color: rgba(139, 92, 246, 0.12);
+  border-color: rgba(217, 178, 111, 0.12);
 
   background:
     radial-gradient(
       circle at 50% 35%,
-      rgba(139, 92, 246, 0.08),
+      rgba(217, 178, 111, 0.08),
       transparent 60%
     );
 
@@ -412,7 +412,7 @@
 
   transform: translate(-50%, -50%);
 
-  background: rgba(139, 92, 246, 0.08);
+  background: rgba(217, 178, 111, 0.08);
 
   filter: blur(60px);
 
@@ -433,10 +433,10 @@
   align-items: center;
   justify-content: center;
 
-  border: 1px solid rgba(167, 139, 250, 0.25);
+  border: 1px solid rgba(227, 196, 141, 0.25);
   border-radius: 50%;
 
-  color: #a78bfa;
+  color: #e3c48d;
 
   font-size: 20px;
   font-weight: 300;
@@ -462,7 +462,7 @@
 }
 
 .coming-content h3 span {
-  color: #8b5cf6;
+  color: #d9b26f;
 }
 
 .coming-content p {
@@ -502,9 +502,9 @@
 
   border-radius: 50%;
 
-  background: #8b5cf6;
+  background: #d9b26f;
 
-  box-shadow: 0 0 10px rgba(139, 92, 246, 0.7);
+  box-shadow: 0 0 10px rgba(217, 178, 111, 0.7);
 }
 
 
@@ -521,7 +521,7 @@
   padding: 120px 24px 100px;
 
   scrollbar-width: thin;
-  scrollbar-color: rgba(139, 92, 246, 0.5) transparent;
+  scrollbar-color: rgba(217, 178, 111, 0.5) transparent;
 }
 
 
@@ -536,10 +536,45 @@
 }
 
 .projects-page::-webkit-scrollbar-thumb {
-  background: rgba(139, 92, 246, 0.35);
+  background: rgba(217, 178, 111, 0.35);
   border-radius: 10px;
 }
 
 .projects-page::-webkit-scrollbar-thumb:hover {
-  background: rgba(139, 92, 246, 0.7);
+  background: rgba(217, 178, 111, 0.7);
+}
+
+/* ESTILO CORPORATIVO: tarjetas planas */
+.project-card,
+.project-card:hover {
+  background: #172740;
+  box-shadow: none;
+}
+
+.project-coming-soon {
+  background: transparent;
+}
+
+.project-coming-soon::before {
+  display: none;
+}
+
+
+/* GRABACIÓN DE LA APLICACIÓN */
+.project-media {
+  display: block;
+  margin: -4px 0 20px;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  background: #0f1b2d;
+}
+
+.project-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top left;
 }

@@ -7,7 +7,7 @@
 :root {
   font-family: 'Inter', sans-serif;
   color: #ffffff;
-  background: #07070a;
+  background: #0f1b2d;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
@@ -25,7 +25,7 @@ html {
 body {
   min-width: 320px;
   min-height: 100vh;
-  background: #07070a;
+  background: #0f1b2d;
 }
 
 body,
@@ -55,10 +55,10 @@ button {
   background:
     radial-gradient(
       circle at 75% 20%,
-      rgba(124, 58, 237, 0.10),
+      rgba(196, 154, 82, 0.10),
       transparent 30%
     ),
-    #07070a;
+    #0f1b2d;
 }
 
 
@@ -103,14 +103,14 @@ button {
   top: -250px;
   right: -100px;
 
-  background: rgba(124, 58, 237, 0.16);
+  background: rgba(196, 154, 82, 0.16);
 }
 
 .background-glow-two {
   bottom: -350px;
   left: -200px;
 
-  background: rgba(99, 102, 241, 0.08);
+  background: rgba(217, 178, 111, 0.08);
 }
 
 /* =========================
@@ -137,3 +137,13 @@ button {
   justify-content: center;
 } */
 
+
+
+/* =========================
+   ESTILO CORPORATIVO
+   Fondo liso, sin brillos ni rejilla
+========================= */
+
+.app {
+  background: #0f1b2d;
+}

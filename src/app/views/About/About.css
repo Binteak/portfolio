@@ -24,7 +24,7 @@
 .section-label {
   margin-bottom: 24px;
 
-  color: #a78bfa;
+  color: #e3c48d;
 
   font-size: 11px;
   font-weight: 600;
@@ -45,7 +45,7 @@
 }
 
 .about-container h1 span {
-  color: #8b5cf6;
+  color: #d9b26f;
 }
 
 .about-description {
@@ -53,7 +53,7 @@
 
   margin-top: 30px;
 
-  color: #8f8f9d;
+  color: #a3adbd;
 
   font-size: 16px;
 
@@ -89,7 +89,7 @@
   background:
     linear-gradient(
       145deg,
-      rgba(139, 92, 246, 0.07),
+      rgba(217, 178, 111, 0.07),
       rgba(255, 255, 255, 0.02)
     );
 
@@ -116,7 +116,7 @@
 
   border-radius: 50%;
 
-  background: rgba(139, 92, 246, 0.08);
+  background: rgba(217, 178, 111, 0.08);
 
   filter: blur(60px);
 
@@ -126,12 +126,12 @@
 .about-card:hover {
   transform: translateY(-5px);
 
-  border-color: rgba(139, 92, 246, 0.3);
+  border-color: rgba(217, 178, 111, 0.3);
 
   background:
     linear-gradient(
       145deg,
-      rgba(139, 92, 246, 0.1),
+      rgba(217, 178, 111, 0.1),
       rgba(255, 255, 255, 0.025)
     );
 }
@@ -139,7 +139,7 @@
 .card-number {
   margin-bottom: 22px;
 
-  color: #8b5cf6;
+  color: #d9b26f;
 
   font-family: 'Space Grotesk', sans-serif;
 
@@ -163,7 +163,7 @@
 .about-card p {
   max-width: 480px;
 
-  color: #8f8f9d;
+  color: #a3adbd;
 
   font-size: 14px;
 
@@ -219,9 +219,9 @@
 .specialization:hover {
   transform: translateY(-3px);
 
-  border-color: rgba(139, 92, 246, 0.3);
+  border-color: rgba(217, 178, 111, 0.3);
 
-  background: rgba(139, 92, 246, 0.05);
+  background: rgba(217, 178, 111, 0.05);
 }
 
 .specialization-icon {
@@ -235,13 +235,13 @@
 
   flex-shrink: 0;
 
-  border: 1px solid rgba(139, 92, 246, 0.25);
+  border: 1px solid rgba(217, 178, 111, 0.25);
 
   border-radius: 8px;
 
-  background: rgba(139, 92, 246, 0.08);
+  background: rgba(217, 178, 111, 0.08);
 
-  color: #a78bfa;
+  color: #e3c48d;
 
   font-size: 13px;
 
@@ -261,7 +261,7 @@
 }
 
 .specialization p {
-  color: #71717a;
+  color: #8792a5;
 
   font-size: 10px;
 
@@ -289,7 +289,7 @@
 }
 
 .about-footer p {
-  color: #8f8f9d;
+  color: #a3adbd;
 
   font-size: 14px;
 
@@ -373,7 +373,7 @@
   padding: 120px 24px 100px;
 
   scrollbar-width: thin;
-  scrollbar-color: rgba(139, 92, 246, 0.5) transparent;
+  scrollbar-color: rgba(217, 178, 111, 0.5) transparent;
 }
 
 .about-container {
@@ -390,10 +390,26 @@
 }
 
 .about-page::-webkit-scrollbar-thumb {
-  background: rgba(139, 92, 246, 0.35);
+  background: rgba(217, 178, 111, 0.35);
   border-radius: 10px;
 }
 
 .about-page::-webkit-scrollbar-thumb:hover {
-  background: rgba(139, 92, 246, 0.7);
+  background: rgba(217, 178, 111, 0.7);
+}
+
+/* ESTILO CORPORATIVO: tarjetas planas */
+.about-card {
+  background: #172740;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.about-card::before {
+  display: none;
+}
+
+.about-card:hover {
+  background: #172740;
+  box-shadow: none;
 }

@@ -48,7 +48,7 @@
 
   background: rgba(255, 255, 255, 0.025);
 
-  color: #a1a1aa;
+  color: #b4bdcb;
 
   font-size: 12px;
 }
@@ -61,10 +61,10 @@
 
   border-radius: 50%;
 
-  background: #a78bfa;
+  background: #e3c48d;
 
   box-shadow:
-    0 0 12px rgba(167, 139, 250, 0.8);
+    0 0 12px rgba(227, 196, 141, 0.8);
 
   animation: pulse 2s infinite;
 }
@@ -114,8 +114,8 @@
   background: linear-gradient(
     110deg,
     #ffffff 0%,
-    #c4b5fd 45%,
-    #8b5cf6 100%
+    #ead5ae 45%,
+    #d9b26f 100%
   );
 
   -webkit-background-clip: text;
@@ -134,7 +134,7 @@
 
   margin-top: 30px;
 
-  color: #8f8f9d;
+  color: #a3adbd;
 
   font-size: 16px;
   line-height: 1.7;
@@ -192,12 +192,12 @@
 ========================================================= */
 
 .primary-button {
-  border: 1px solid rgba(139, 92, 246, 0.5);
+  border: 1px solid rgba(217, 178, 111, 0.5);
 
   background: linear-gradient(
     135deg,
-    #8b5cf6,
-    #7c3aed
+    #d9b26f,
+    #c49a52
   );
 
   color: #ffffff;
@@ -205,8 +205,8 @@
   cursor: pointer;
 
   box-shadow:
-    0 0 0 1px rgba(139, 92, 246, 0.15),
-    0 10px 35px rgba(124, 58, 237, 0.25);
+    0 0 0 1px rgba(217, 178, 111, 0.15),
+    0 10px 35px rgba(196, 154, 82, 0.25);
 }
 
 .primary-button span {
@@ -220,8 +220,8 @@
   transform: translateY(-3px);
 
   box-shadow:
-    0 0 0 1px rgba(139, 92, 246, 0.4),
-    0 15px 40px rgba(124, 58, 237, 0.4);
+    0 0 0 1px rgba(217, 178, 111, 0.4),
+    0 15px 40px rgba(196, 154, 82, 0.4);
 }
 
 .primary-button:hover span {
@@ -238,7 +238,7 @@
 
   background: rgba(255, 255, 255, 0.035);
 
-  color: #a1a1aa;
+  color: #b4bdcb;
 
   text-decoration: none;
 }
@@ -254,18 +254,18 @@
 .social-button:hover {
   transform: translateY(-3px);
 
-  background: rgba(139, 92, 246, 0.08);
+  background: rgba(217, 178, 111, 0.08);
 
-  border-color: rgba(139, 92, 246, 0.45);
+  border-color: rgba(217, 178, 111, 0.45);
 
   color: #ffffff;
 
   box-shadow:
-    0 10px 30px rgba(139, 92, 246, 0.12);
+    0 10px 30px rgba(217, 178, 111, 0.12);
 }
 
 .social-button:hover svg {
-  color: #a78bfa;
+  color: #e3c48d;
 
   transform: scale(1.08);
 }
@@ -298,7 +298,7 @@
 
   filter: blur(1px);
 
-  border: 1px solid rgba(167, 139, 250, 0.18);
+  border: 1px solid rgba(227, 196, 141, 0.18);
 }
 
 .orb-one {
@@ -307,13 +307,13 @@
 
   background: radial-gradient(
     circle,
-    rgba(139, 92, 246, 0.12),
+    rgba(217, 178, 111, 0.12),
     transparent 65%
   );
 
   box-shadow:
-    inset 0 0 70px rgba(139, 92, 246, 0.08),
-    0 0 80px rgba(139, 92, 246, 0.08);
+    inset 0 0 70px rgba(217, 178, 111, 0.08),
+    0 0 80px rgba(217, 178, 111, 0.08);
 
   animation:
     float 7s ease-in-out infinite;
@@ -323,7 +323,7 @@
   width: 260px;
   height: 260px;
 
-  border-color: rgba(167, 139, 250, 0.12);
+  border-color: rgba(227, 196, 141, 0.12);
 
   animation:
     float 9s ease-in-out infinite reverse;
@@ -335,12 +335,12 @@
 
   background: radial-gradient(
     circle,
-    rgba(139, 92, 246, 0.16),
+    rgba(217, 178, 111, 0.16),
     transparent 65%
   );
 
   box-shadow:
-    0 0 70px rgba(139, 92, 246, 0.2);
+    0 0 70px rgba(217, 178, 111, 0.2);
 
   animation:
     float 5s ease-in-out infinite;
@@ -380,13 +380,13 @@
 
   border-radius: 14px;
 
-  background: rgba(13, 13, 18, 0.72);
+  background: rgba(23, 39, 64, 0.72);
 
   backdrop-filter: blur(20px);
 
   box-shadow:
     0 30px 80px rgba(0, 0, 0, 0.5),
-    0 0 60px rgba(139, 92, 246, 0.08);
+    0 0 60px rgba(217, 178, 111, 0.08);
 
   transform: rotate(3deg);
 
@@ -444,7 +444,7 @@
 
   gap: 8px;
 
-  color: #a1a1aa;
+  color: #b4bdcb;
 
   font-family: monospace;
 
@@ -458,15 +458,15 @@
 }
 
 .code-purple {
-  color: #a78bfa;
+  color: #e3c48d;
 }
 
 .code-key {
-  color: #c4b5fd;
+  color: #ead5ae;
 }
 
 .code-value {
-  color: #71717a;
+  color: #8792a5;
 }
 
 
@@ -490,7 +490,7 @@
 
   gap: 10px;
 
-  color: #52525b;
+  color: #6b7890;
 
   font-size: 10px;
 
@@ -505,7 +505,7 @@
 
   background: linear-gradient(
     to bottom,
-    #8b5cf6,
+    #d9b26f,
     transparent
   );
 }
@@ -546,13 +546,13 @@
 
   overflow: hidden;
 
-  border: 1px solid rgba(167, 139, 250, 0.5);
+  border: 1px solid rgba(227, 196, 141, 0.5);
 
-  background: #111116;
+  background: #172740;
 
   box-shadow:
-    0 0 0 8px rgba(139, 92, 246, 0.04),
-    0 0 60px rgba(139, 92, 246, 0.25),
+    0 0 0 8px rgba(217, 178, 111, 0.04),
+    0 0 60px rgba(217, 178, 111, 0.25),
     0 30px 80px rgba(0, 0, 0, 0.5);
 }
 
@@ -592,7 +592,7 @@
 
   border-radius: 50%;
 
-  background: rgba(139, 92, 246, 0.2);
+  background: rgba(217, 178, 111, 0.2);
 
   filter: blur(80px);
 
@@ -645,11 +645,11 @@
 
   border-radius: 100px;
 
-  background: rgba(12, 12, 16, 0.8);
+  background: rgba(23, 39, 64, 0.8);
 
   backdrop-filter: blur(15px);
 
-  color: #a1a1aa;
+  color: #b4bdcb;
 
   font-size: 11px;
 
@@ -665,10 +665,10 @@
 
   border-radius: 50%;
 
-  background: #8b5cf6;
+  background: #d9b26f;
 
   box-shadow:
-    0 0 10px rgba(139, 92, 246, 0.8);
+    0 0 10px rgba(217, 178, 111, 0.8);
 }
 
 
@@ -677,8 +677,24 @@
    Hidden by default
 ========================================================= */
 
+/* El nombre se ve también en escritorio (la foto pequeña sigue siendo solo de móvil) */
 .hero-mobile-title {
-  display: none;
+  display: block;
+}
+
+@media (min-width: 851px) {
+  .hero-mobile-title {
+    margin-bottom: 20px;
+  }
+
+  .hero-mobile-title h1 {
+    font-size: clamp(48px, 5.2vw, 76px);
+    letter-spacing: -3px;
+  }
+
+  .hero-description {
+    max-width: 600px;
+  }
 }
 
 .hero-mobile-profile {
@@ -847,13 +863,13 @@
 
     overflow: hidden;
 
-    border: 1px solid rgba(167, 139, 250, 0.55);
+    border: 1px solid rgba(227, 196, 141, 0.55);
 
-    background: #111116;
+    background: #172740;
 
     box-shadow:
-      0 0 0 5px rgba(139, 92, 246, 0.05),
-      0 0 35px rgba(139, 92, 246, 0.25);
+      0 0 0 5px rgba(217, 178, 111, 0.05),
+      0 0 35px rgba(217, 178, 111, 0.25);
   }
 
   .hero-mobile-profile .profile-frame img {
@@ -1150,4 +1166,51 @@
 
     padding: 6px 10px;
   }
+}
+
+/* =========================================================
+   ESTILO CORPORATIVO: sin degradados, brillos ni pulsos
+========================================================= */
+
+.gradient-text {
+  background: none;
+  -webkit-text-fill-color: currentColor;
+  color: #d9b26f;
+}
+
+.status-dot {
+  animation: none;
+  box-shadow: none;
+  background: #6fbf8e;
+}
+
+.primary-button {
+  background: #d9b26f;
+  border-color: #d9b26f;
+  color: #0f1b2d;
+  box-shadow: none;
+}
+
+.primary-button:hover {
+  background: #e3c48d;
+  box-shadow: none;
+}
+
+.social-button:hover {
+  box-shadow: none;
+}
+
+.profile-glow {
+  display: none;
+}
+
+.profile-frame {
+  border-color: rgba(217, 178, 111, 0.6);
+  box-shadow: none;
+}
+
+.profile-badge {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  background: #172740;
 }

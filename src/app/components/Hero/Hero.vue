@@ -12,14 +12,14 @@ const content = {
     status: 'Available for new opportunities',
     subtitle: 'Senior Full Stack Developer · Angular · Python · Applied AI',
     description:
-      "9 years in banking building products end to end, from the business case to production. I combine hands-on development and technical leadership, and I now work independently on generative AI: AI agents with tool calling, RAG and LLMs, taken all the way to production.",
+      "Full Stack Developer with 9 years in banking. I started as a Data Scientist and spent 8 years at EY working for BBVA, Banco Santander and Liberbank: Angular and Vue applications with Python, data pipelines on AWS, regulatory reporting and CI/CD deployments, as developer, Tech Lead and Team Lead. I now add applied AI to that: agents, RAG and LLMs.",
     more: 'More About me'
   },
   es: {
     status: 'Disponible para nuevas oportunidades',
     subtitle: 'Senior Full Stack Developer · Angular · Python · IA aplicada',
     description:
-      'Nueve años en banca construyendo productos de principio a fin, del caso de negocio a producción. Combino desarrollo y liderazgo técnico, y ahora me dedico por mi cuenta a la IA generativa: agentes con tool calling, RAG y LLMs llevados hasta producción.',
+      'Full Stack Developer con 9 años en banca. Empecé como Data Scientist y pasé 8 años en EY trabajando para BBVA, Banco Santander y Liberbank: aplicaciones Angular y Vue con Python, pipelines de datos en AWS, reporting regulatorio y despliegues con CI/CD, como desarrollador, Tech Lead y Team Lead. Ahora sumo a eso la IA aplicada: agentes, RAG y LLMs.',
     more: 'Más sobre mí'
   }
 }

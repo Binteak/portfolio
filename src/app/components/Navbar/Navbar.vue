@@ -114,7 +114,6 @@ function toggleMenu() {
         @click="navigate('contact')"
       >
         {{ c.contact }}
-        <span>→</span>
       </button>
 
       <button
@@ -158,7 +157,6 @@ function toggleMenu() {
         @click="navigate('contact')"
       >
         {{ c.contact }}
-        <span>→</span>
       </button>
 
     </div>
