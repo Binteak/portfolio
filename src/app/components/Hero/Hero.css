@@ -1214,3 +1214,23 @@
   -webkit-backdrop-filter: none;
   background: #172740;
 }
+
+
+/* =========================================================
+   MÓVIL: contenido más arriba para que los botones
+   no queden debajo de los puntos de navegación
+========================================================= */
+
+@media (max-width: 700px) {
+  .hero {
+    align-content: start;
+    align-items: start;
+
+    padding-top: 78px;
+    padding-bottom: 110px;
+  }
+
+  .status {
+    margin-top: 16px;
+  }
+}
